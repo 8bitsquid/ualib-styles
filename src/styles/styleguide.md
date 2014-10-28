@@ -1,4 +1,5 @@
-# UA Libraries Style Guide
+UA Libraries Style Guide
+========================
 
 This styleguide is intended for web developers (e.g., not 'content creators/editors'). It gives basic information about the primary classes/features available.
 For now, this styleguide is being generating using [kss-node](https://github.com/kss-node/kss-node). Unforunately, kss-node doesn't offer
@@ -14,6 +15,8 @@ available CSS and Components not listed in the styleguide. **NOTE:** [Bootstrap'
 ### Issues and feature requests
 Use github's [issues system](https://github.com/ualibweb/ualib-styles/issues) to report problems or make feature requests. To do this, you must first create a github account. Afterwards, let me know you account name and I'll add you as a contributor.
 
+---
+
 ## Forking, installing, and building the UA Libraries styles and styleguide
 
 ### Requirements
@@ -25,6 +28,8 @@ You must have the following software install on your computer to build the CSS a
 3. [Bower](http://bower.io/)
     * [See here](http://bower.io/#install-bower) for installation
 
+---
+
 ### Forking repo and Installing dependencies
 
 1. Create you own fork of the [ualibweb/ualib-styles](https://github.com/ualibweb/ualib-styles) repo. [See here](https://help.github.com/articles/fork-a-repo/) for instructions on forking a github repo.
@@ -33,6 +38,8 @@ You must have the following software install on your computer to build the CSS a
 3. Run `npm install` to install dependencies for `grunt` (ensure you're in the same folder as the `package.json` file).
 3. Run `bower install` in the command line (ensure you're in the same folder as the `bower.json` file).
 
+---
+
 ### Build everything (CSS and Styleguide)
 
 1. Run `grunt` or `grunt default`
@@ -40,6 +47,8 @@ You must have the following software install on your computer to build the CSS a
 ### Build CSS only
 
 1. Run `grunt css`
+
+---
 
 #### The final CSS file(s) are build to
 ```
