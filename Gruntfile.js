@@ -40,4 +40,5 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-exec');
 
     grunt.registerTask('default', ['customizeBootstrap', 'less:bootstrap', 'exec', 'less:styleguide']);
+    grunt.registerTask('css', ['customizeBootstrap', 'less:bootstrap']);
 };
