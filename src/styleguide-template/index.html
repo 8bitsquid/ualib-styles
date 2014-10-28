@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="generator" content="kss-node" />
+        <title>UA Libraries Styleguide</title>
+        <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/github.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500|Oxygen:400,700,300|Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../dist/css/ualib-bootstrap.css">
+        <link rel="stylesheet" href="public/ualib-styleguide.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body data-spy="scroll" data-target="#styleguide-nav">
+        <header id="header-nav">
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html" >UA Libraries Styleguide</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            {{#eachRoot}}
+                            <li {{#isRoot @root.rootNumber}} class="active" {{/isRoot}}>
+                                <a href="section-{{reference}}.html">{{header}}</a>
+                            </li>
+                            {{/eachRoot}}
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container content">
+            <div class="row">
+                {{#section rootNumber}}
+                {{#ifDepth 1}}
+                <div class="jumbotron" id="header-jumbo">
+                    <div class="container">
+
+                            <h1>{{ header }} <small>{{ reference }}.0</small></h1>
+
+                            {{#if description}}
+                                {{{description}}}
+                            {{/if}}
+
+                    </div>
+                </div>
+                {{/ifDepth}}
+                {{/section}}
+                <div class="col-sm-2 col-sm-push-10">
+                    <div id="styleguide-nav" class="styleguide-nav">
+                        <ul class="nav nav-pills nav-stacked">
+                            {{#eachRoot}}
+                            {{#isRoot @root.rootNumber}}
+                            {{#eachSection reference}}
+                            {{#unlessDepth 1}}
+                            <li>
+                                <a href="#{{scrollSpyId reference}}" class="styleguide-nav-{{refDepth}}">{{header}} <small>{{reference}}</small> </a>
+                            </li>
+                                {{/unlessDepth}}
+                                {{/eachSection}}
+                                {{/isRoot}}
+                                {{/eachRoot}}
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-sm-pull-2">
+                    {{#if overview}}
+                        {{{overview}}}
+                    {{else}}
+                        {{#eachSection rootNumber}}
+                        {{#unlessDepth 1}}
+                                <div class="row">
+                                    <h{{refDepth}} class="kss-title" id="{{scrollSpyId reference}}">{{ header }} <small>{{ reference }}{{#ifDepth 1}}.0{{/ifDepth}}</small></h{{refDepth}}>
+
+
+                                    {{#if description}}
+                                    {{{description}}}
+                                    {{/if}}
+
+                                    {{#if markup}}
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            {{modifierMarkup}}
+                                        </div>
+                                        {{#unlessHideHtml reference}}
+                                        <div class="panel-footer">
+                                            <pre>
+                                                <code class="html">{{markup}}</code>
+                                            </pre>
+                                        </div>
+                                        {{/unlessHideHtml}}
+                                    </div>
+                                    {{/if}}
+
+                                </div>
+
+                        {{/unlessDepth}}
+                        {{/eachSection}}
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            $(document).ready(function(){
+                var fixed = false;
+                var nav = $('#styleguide-nav');
+                var navWidth = nav.width();
+                var navTop = nav.offset().top;
+
+                //var offsetTop = $('#header-nav').height() + $('header-jumbo').height();
+
+                $(document).scroll(function(){
+                    if ($(document).scrollTop() > (navTop-72)){
+                        if (!fixed){
+                            nav.addClass('nav-fixed');
+                            nav.width(navWidth);
+                            fixed = true;
+                        }
+                    }
+                    else{
+                        if (fixed){
+                            nav.removeClass('nav-fixed');
+                            fixed = false;
+                        }
+                    }
+                })
+            })
+        </script>
+    </body>
+</html>

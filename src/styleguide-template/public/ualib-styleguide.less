@@ -1,0 +1,161 @@
+@import "..\..\styles\bootstrap\variables.less";
+body{
+  position: relative;
+}
+pre{
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  word-break: normal;
+  word-wrap: nowrap;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.content{
+  margin-top: 72px;
+}
+
+/* styleguide nav */
+
+.nav-fixed{
+  top: 72px;
+  position: fixed;
+}
+
+.styleguide-nav > .nav > li > a{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.styleguide-nav > .nav > li > .styleguide-nav-3{
+  padding-left: 30px;
+}
+
+.styleguide-nav > .nav-pills {
+  > li {
+    float: left;
+
+    // Links rendered as pills
+    > a {
+      border-radius: @nav-pills-border-radius;
+    }
+    + li {
+      margin-left: 2px;
+    }
+
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @nav-pills-active-link-hover-color;
+        background-color: @link-color;
+      }
+    }
+  }
+}
+/* Typgraphy */
+.open-sans{
+  font-family: 'Open Sans', sans-serif;
+}
+.oxygen{
+  font-family: 'Oxygen', sans-serif;
+}
+.font-block{
+  font-size: 47px;
+}
+
+/* Swatches */
+
+.swatch{
+  width: 100%;
+}
+
+.swatch-color{
+  height:150px;
+}
+
+.row .swatch-color{
+  margin: 5px;
+  border: 2px solid #ccc;
+}
+
+table .swatch-color{
+  border: none !important;
+}
+
+/* Primary Colors */
+
+.swatch-color-link{
+  background-color: @link-color;
+}
+.table .swatch-color-link:after{
+  color: #f6f6f6;
+  content: "@{link-color}";
+}
+
+.swatch-color-primary{
+  background-color: @brand-primary;
+}
+.table .swatch-color-primary:after{
+
+  color: #f6f6f6;
+  content: "@{brand-primary}";
+}
+
+.swatch-color-gray-lighter{
+  background-color: @gray-lighter;
+}
+.table .swatch-color-gray-lighter:after{
+  content: "@{gray-lighter}";
+}
+
+.swatch-color-gray-dark{
+  background-color: @gray-dark;
+}
+.table .swatch-color-gray-dark:after{
+  color: #f6f6f6;
+  content: "@{gray-dark}";
+}
+
+.swatch-color-body-bg{
+  background-color: @body-bg;
+}
+.table .swatch-color-body-bg:after{
+  content: "@{body-bg}";
+}
+
+/* Secondary Colors */
+
+.swatch-color-orange{
+  background-color: @orange;
+}
+.table .swatch-color-orange:after{
+  color: #f6f6f6;
+  content: "@{orange}";
+}
+
+.swatch-color-dark-blue{
+  background-color: @dark-blue;
+}
+.table .swatch-color-dark-blue:after{
+  color: #f6f6f6;
+  content: "@{dark-blue}";
+}
+
+.swatch-color-gray{
+  background-color: @gray;
+}
+.table .swatch-color-gray:after{
+  color: #f6f6f6;
+  content: "@{gray}";
+}
+
+.swatch-color-green{
+  background-color: @green;
+}
+.table .swatch-color-green:after{
+  color: #f6f6f6;
+  content: "@{green}";
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="generator" content="kss-node" />
+        <title>UA Libraries Styleguide</title>
+        <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/github.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500|Oxygen:400,700,300|Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../dist/css/ualib-bootstrap.css">
+        <link rel="stylesheet" href="public/ualib-styleguide.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body data-spy="scroll" data-target="#styleguide-nav">
+        <header id="header-nav">
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html" >UA Libraries Styleguide</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="section-1.html">Colors</a>
+                            </li>
+                            <li >
+                                <a href="section-2.html">Typography</a>
+                            </li>
+                            <li >
+                                <a href="section-3.html">Buttons</a>
+                            </li>
+                            <li >
+                                <a href="section-4.html">Icons</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container content">
+            <div class="row">
+                <div class="col-sm-2 col-sm-push-10">
+                    <div id="styleguide-nav" class="styleguide-nav">
+                        <ul class="nav nav-pills nav-stacked">
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-sm-pull-2">
+                         <h1 id="ua-libraries-style-guide">UA Libraries Style Guide</h1>
+<p>This styleguide is intended for web developers (e.g., not &#39;content creators/editors&#39;). It gives basic information about the primary classes/features available.
+For now, this styleguide is being generating using <a href="https://github.com/kss-node/kss-node">kss-node</a>. Unforunately, kss-node doesn&#39;t offer
+all the features we will need, so it will likely be abandoned for another method when we need to development the styleguide for content creators.</p>
+<h2 id="forking-installing-and-building-the-ua-libraries-styles-and-styleguide">Forking, installing, and building the UA Libraries styles and styleguide</h2>
+<h3 id="requirements">Requirements</h3>
+<ul>
+<li><a href="http://nodejs.org/">Node.js</a><ul>
+<li>Go to their <a href="http://nodejs.org/download/">downloads page</a> and install the appropriate package</li>
+</ul>
+</li>
+<li><a href="http://gruntjs.com/">Grunt.js</a><ul>
+<li><a href="http://gruntjs.com/getting-started#installing-the-cli">See here</a> for installation instructions</li>
+</ul>
+</li>
+<li><a href="http://bower.io/">Bower</a><ul>
+<li><a href="http://bower.io/#install-bower">See here</a> for installation</li>
+</ul>
+</li>
+</ul>
+<h3 id="forking-repo-and-installing-dependencies">Forking repo and Installing dependencies</h3>
+<ol>
+<li>Create you own fork of the <a href="https://github.com/ualibweb/ualib-styles">ualibweb/ualib-styles</a> repo. <a href="https://help.github.com/articles/fork-a-repo/">See here</a> if you do not already know how to fork and clone a github repo.</li>
+<li>Run <code>npm install -g kss</code> in the command line to install <code>kss-node</code> globally.</li>
+<li>Run <code>bower install</code> in the command line (ensure you&#39;re in the same folder as the <code>bower.json</code> file).</li>
+</ol>
+<h3 id="build-the-css-and-styleguide">Build the CSS and Styleguide</h3>
+<ol>
+<li>Run <code>grunt</code> or <code>grunt default</code> to have grunt build the CSS and styleguide</li>
+</ol>
+<p>The final CSS files are available under</p>
+<pre><code>dist/css/
+</code></pre><p>The built styleguide is under</p>
+<pre><code>styleguide/
+</code></pre>
+                </div>
+            </div>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            $(document).ready(function(){
+                var fixed = false;
+                var nav = $('#styleguide-nav');
+                var navWidth = nav.width();
+                var navTop = nav.offset().top;
+
+                //var offsetTop = $('#header-nav').height() + $('header-jumbo').height();
+
+                $(document).scroll(function(){
+                    if ($(document).scrollTop() > (navTop-72)){
+                        if (!fixed){
+                            nav.addClass('nav-fixed');
+                            nav.width(navWidth);
+                            fixed = true;
+                        }
+                    }
+                    else{
+                        if (fixed){
+                            nav.removeClass('nav-fixed');
+                            fixed = false;
+                        }
+                    }
+                })
+            })
+        </script>
+    </body>
+</html>

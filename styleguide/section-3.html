@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="generator" content="kss-node" />
+        <title>UA Libraries Styleguide</title>
+        <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/github.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500|Oxygen:400,700,300|Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../dist/css/ualib-bootstrap.css">
+        <link rel="stylesheet" href="public/ualib-styleguide.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body data-spy="scroll" data-target="#styleguide-nav">
+        <header id="header-nav">
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html" >UA Libraries Styleguide</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="section-1.html">Colors</a>
+                            </li>
+                            <li >
+                                <a href="section-2.html">Typography</a>
+                            </li>
+                            <li  class="active" >
+                                <a href="section-3.html">Buttons</a>
+                            </li>
+                            <li >
+                                <a href="section-4.html">Icons</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container content">
+            <div class="row">
+                <div class="jumbotron" id="header-jumbo">
+                    <div class="container">
+
+                            <h1>Buttons <small>3.0</small></h1>
+
+                                <p>Usage rules and recommendations:</p>
+<ul>
+<li>Always use the <a href="#2.2">primary button</a>, unless otherwise stated in the styleguide. See <a href="#2.2">primary button</a> for details.</li>
+<li>Use <code>&lt;button type=&quot;button&quot;&gt;</code> over <code>&lt;a href=&quot;#&quot;&gt;</code> and <code>&lt;input type=&quot;button&quot;&gt;</code>, whenever possible.</li>
+<li>Always declare a <code>type</code> for you <code>button</code>.</li>
+</ul>
+
+
+                    </div>
+                </div>
+                <div class="col-sm-2 col-sm-push-10">
+                    <div id="styleguide-nav" class="styleguide-nav">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li>
+                                <a href="#3dot1" class="styleguide-nav-2">Primary Button <small>3.1</small> </a>
+                            </li>
+                            <li>
+                                <a href="#3dot2" class="styleguide-nav-2">Default Button <small>3.2</small> </a>
+                            </li>
+                            <li>
+                                <a href="#3dot3" class="styleguide-nav-2">Success Button <small>3.3</small> </a>
+                            </li>
+                            <li>
+                                <a href="#3dot4" class="styleguide-nav-2">Info Button <small>3.4</small> </a>
+                            </li>
+                            <li>
+                                <a href="#3dot5" class="styleguide-nav-2">Warning Button <small>3.5</small> </a>
+                            </li>
+                            <li>
+                                <a href="#3dot6" class="styleguide-nav-2">Danger Button <small>3.6</small> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-sm-pull-2">
+                                <div class="row">
+                                    <h2 class="kss-title" id="3dot1">Primary Button <small>3.1</small></h2>
+
+
+                                    <p>Always use this button, except in the following contexts:</p>
+<ul>
+<li>Button appears on top of a low-value background color</li>
+<li>Button appears on top of the <a href="#">primary brand color</a></li>
+<li>Button appears inside a success, info, warning, or danger prompt or modal</li>
+</ul>
+
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-primary active">Primary Active</button>
+<button type="button" class="btn btn-primary disabled">Primary Disabled</button>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <pre>
+                                                <code class="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary active&quot;&gt;Primary Active&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary disabled&quot;&gt;Primary Disabled&lt;/button&gt;</code>
+                                            </pre>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <h2 class="kss-title" id="3dot2">Default Button <small>3.2</small></h2>
+
+
+                                    <p>Usage:</p>
+<ul>
+<li>Use when the <a href="#2.2">primary button</a> is not appropriate (e.g., on a top a red background or any low-value color with a saturation &gt; 10).</li>
+<li>Avoid using in prompts or modals</li>
+</ul>
+
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-default active">Default Active</button>
+<button type="button" class="btn btn-default disabled">Default Disabled</button>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <pre>
+                                                <code class="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default active&quot;&gt;Default Active&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default disabled&quot;&gt;Default Disabled&lt;/button&gt;</code>
+                                            </pre>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <h2 class="kss-title" id="3dot3">Success Button <small>3.3</small></h2>
+
+
+                                    <p>Usage:</p>
+<ul>
+<li>Inside a success prompt or modal</li>
+</ul>
+
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-success active">Success Active</button>
+<button type="button" class="btn btn-success disabled">Success Disabled</button>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <pre>
+                                                <code class="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success active&quot;&gt;Success Active&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success disabled&quot;&gt;Success Disabled&lt;/button&gt;</code>
+                                            </pre>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <h2 class="kss-title" id="3dot4">Info Button <small>3.4</small></h2>
+
+
+                                    <p>Usage:</p>
+<ul>
+<li>Inside a info prompt or modal</li>
+</ul>
+
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-info active">Info Active</button>
+<button type="button" class="btn btn-info disabled">Info Disabled</button>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <pre>
+                                                <code class="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info active&quot;&gt;Info Active&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info disabled&quot;&gt;Info Disabled&lt;/button&gt;</code>
+                                            </pre>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <h2 class="kss-title" id="3dot5">Warning Button <small>3.5</small></h2>
+
+
+                                    <p>Usage:</p>
+<ul>
+<li>Inside a warning prompt or modal</li>
+</ul>
+
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-warning active">Warning Active</button>
+<button type="button" class="btn btn-warning disabled">Warning Disabled</button>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <pre>
+                                                <code class="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-warning active&quot;&gt;Warning Active&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-warning disabled&quot;&gt;Warning Disabled&lt;/button&gt;</code>
+                                            </pre>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <h2 class="kss-title" id="3dot6">Danger Button <small>3.6</small></h2>
+
+
+                                    <p>Usage:</p>
+<ul>
+<li>Inside a danger prompt or modal</li>
+</ul>
+
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-danger active">Danger Active</button>
+<button type="button" class="btn btn-danger disabled">Danger Disabled</button>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <pre>
+                                                <code class="html">&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger active&quot;&gt;Danger Active&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger disabled&quot;&gt;Danger Disabled&lt;/button&gt;</code>
+                                            </pre>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            $(document).ready(function(){
+                var fixed = false;
+                var nav = $('#styleguide-nav');
+                var navWidth = nav.width();
+                var navTop = nav.offset().top;
+
+                //var offsetTop = $('#header-nav').height() + $('header-jumbo').height();
+
+                $(document).scroll(function(){
+                    if ($(document).scrollTop() > (navTop-72)){
+                        if (!fixed){
+                            nav.addClass('nav-fixed');
+                            nav.width(navWidth);
+                            fixed = true;
+                        }
+                    }
+                    else{
+                        if (fixed){
+                            nav.removeClass('nav-fixed');
+                            fixed = false;
+                        }
+                    }
+                })
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "name": "ualib-styles",
+    "version": "0.0.1",
+    "main": "path/to/main.css",
+    "dependencies": {
+        "bootstrap": "3.2.0"
+    },
+    "private": true
+}

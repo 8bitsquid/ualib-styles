@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="generator" content="kss-node" />
+        <title>UA Libraries Styleguide</title>
+        <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/github.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500|Oxygen:400,700,300|Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../dist/css/ualib-bootstrap.css">
+        <link rel="stylesheet" href="public/ualib-styleguide.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body data-spy="scroll" data-target="#styleguide-nav">
+        <header id="header-nav">
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html" >UA Libraries Styleguide</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="section-1.html">Colors</a>
+                            </li>
+                            <li >
+                                <a href="section-2.html">Typography</a>
+                            </li>
+                            <li >
+                                <a href="section-3.html">Buttons</a>
+                            </li>
+                            <li  class="active" >
+                                <a href="section-4.html">Icons</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container content">
+            <div class="row">
+                <div class="jumbotron" id="header-jumbo">
+                    <div class="container">
+
+                            <h1>Icons <small>4.0</small></h1>
+
+                                <p>Uses the <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> icon service. Only use <a href="http://getbootstrap.com/components/#glyphicons">Bootstrap glyphicons</a> if Font Awesome does not provide the needed icon.</p>
+<p>To load icons, add this head include <code>&lt;link href=&quot;//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot;&gt;</code>.</p>
+<ul>
+<li>All icon classes must be paired with the <code>fa</code> class. (e.g., the <a href="http://fortawesome.github.io/Font-Awesome/icon/life-ring/">fa-life-ring</a> icon would require <code>class=&quot;fa fa-life-ring&quot;</code>)</li>
+<li>Always use <code>span</code> instead of <code>i</code> element. Even though the Font Awesome docs use <code>i</code>, we want to avoid repurposing existing HTML elements for WCAG 2.0AA compliance.</li>
+<li>Use sparingly in sub menus.</li>
+<li>Scroll through the definitions below to determine which icon to use.</li>
+<li>Read through Font Awesome&#39;s <a href="http://fortawesome.github.io/Font-Awesome/examples/">example docs</a> to see what tricks this icon library offers.</li>
+</ul>
+
+
+                    </div>
+                </div>
+                <div class="col-sm-2 col-sm-push-10">
+                    <div id="styleguide-nav" class="styleguide-nav">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li>
+                                <a href="#4dot1" class="styleguide-nav-2">Form icons <small>4.1</small> </a>
+                            </li>
+                            <li>
+                                <a href="#4dot1dot1" class="styleguide-nav-3">Search Button <small>4.1.1</small> </a>
+                            </li>
+                            <li>
+                                <a href="#4dot2" class="styleguide-nav-2">Brand icons <small>4.2</small> </a>
+                            </li>
+                            <li>
+                                <a href="#4dot2dot1" class="styleguide-nav-3">Operating Systems <small>4.2.1</small> </a>
+                            </li>
+                            <li>
+                                <a href="#4dot2dot2" class="styleguide-nav-3">Social Media <small>4.2.2</small> </a>
+                            </li>
+                            <li>
+                                <a href="#4dot2dot3" class="styleguide-nav-3">Video &amp; streaming <small>4.2.3</small> </a>
+                            </li>
+                            <li>
+                                <a href="#4dot2dot4" class="styleguide-nav-3">Other <small>4.2.4</small> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-sm-pull-2">
+                                <div class="row">
+                                    <h2 class="kss-title" id="4dot1">Form icons <small>4.1</small></h2>
+
+
+                                    <p>Use these icons when in a <code>form</code>.</p>
+
+
+
+                                </div>
+
+                                <div class="row">
+                                    <h3 class="kss-title" id="4dot1dot1">Search Button <small>4.1.1</small></h3>
+
+
+                                    <p>Use <code>fa-search</code></p>
+
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <button class="btn btn-primary"><span class="fa fa-search"></span></button>
+<button class="btn btn-primary">Find <span class="fa fa-search"></span></button>
+<button class="btn btn-default">Search <span class="fa fa-search"></span></button>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <pre>
+                                                <code class="html">&lt;button class=&quot;btn btn-primary&quot;&gt;&lt;span class=&quot;fa fa-search&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary&quot;&gt;Find &lt;span class=&quot;fa fa-search&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default&quot;&gt;Search &lt;span class=&quot;fa fa-search&quot;&gt;&lt;/span&gt;&lt;/button&gt;</code>
+                                            </pre>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <h2 class="kss-title" id="4dot2">Brand icons <small>4.2</small></h2>
+
+
+                                    <p>These are the prefered brand icons.</p>
+
+
+
+                                </div>
+
+                                <div class="row">
+                                    <h3 class="kss-title" id="4dot2dot1">Operating Systems <small>4.2.1</small></h3>
+
+
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <span class="fa fa-apple"></span>
+<span class="fa fa-android"></span>
+<span class="fa fa-linux"></span>
+<span class="fa fa-windows"></span>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <pre>
+                                                <code class="html">&lt;span class=&quot;fa fa-apple&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;fa fa-android&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;fa fa-linux&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;fa fa-windows&quot;&gt;&lt;/span&gt;</code>
+                                            </pre>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <h3 class="kss-title" id="4dot2dot2">Social Media <small>4.2.2</small></h3>
+
+
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <span class="fa fa-facebook-square"></span>
+<span class="fa fa-flickr"></span>
+<span class="fa fa-google-plus"></span>
+<span class="fa fa-reddit"></span>
+<span class="fa fa-delicious"></span>
+<span class="fa fa-twitter"></span>
+<span class="fa fa-tumblr-square"></span>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <pre>
+                                                <code class="html">&lt;span class=&quot;fa fa-facebook-square&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;fa fa-flickr&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;fa fa-google-plus&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;fa fa-reddit&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;fa fa-delicious&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;fa fa-twitter&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;fa fa-tumblr-square&quot;&gt;&lt;/span&gt;</code>
+                                            </pre>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <h3 class="kss-title" id="4dot2dot3">Video &amp; streaming <small>4.2.3</small></h3>
+
+
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <span class="fa fa-vimeo-square"></span>
+<span class="fa fa-youtube-play"></span>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <pre>
+                                                <code class="html">&lt;span class=&quot;fa fa-vimeo-square&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;fa fa-youtube-play&quot;&gt;&lt;/span&gt;</code>
+                                            </pre>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <h3 class="kss-title" id="4dot2dot4">Other <small>4.2.4</small></h3>
+
+
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <span class="fa fa-github"></span>
+<span class="fa fa-google"></span>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <pre>
+                                                <code class="html">&lt;span class=&quot;fa fa-github&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;fa fa-google&quot;&gt;&lt;/span&gt;</code>
+                                            </pre>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            $(document).ready(function(){
+                var fixed = false;
+                var nav = $('#styleguide-nav');
+                var navWidth = nav.width();
+                var navTop = nav.offset().top;
+
+                //var offsetTop = $('#header-nav').height() + $('header-jumbo').height();
+
+                $(document).scroll(function(){
+                    if ($(document).scrollTop() > (navTop-72)){
+                        if (!fixed){
+                            nav.addClass('nav-fixed');
+                            nav.width(navWidth);
+                            fixed = true;
+                        }
+                    }
+                    else{
+                        if (fixed){
+                            nav.removeClass('nav-fixed');
+                            fixed = false;
+                        }
+                    }
+                })
+            })
+        </script>
+    </body>
+</html>
