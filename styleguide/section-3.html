@@ -39,6 +39,21 @@
                             </li>
 
                         </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="https://github.com/ualibweb/" target="_new"><span class="fa fa-github"></span> Github</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="http://getbootstrap.com/"><span class="fa fa-fw fa-border">B</span> Bootstrap Docs</a></li>
+                                    <li><a href="http://fortawesome.github.io/Font-Awesome/"><span class="fa fa-fw fa-flag"></span> Font Awesome</a></li>
+                                    <li><a href="https://www.google.com/fonts"><span class="fa fa-fw fa-paint-brush"></span> Google Fonts</a></li>
+                                    <li><a href="http://webaim.org/resources/contrastchecker/"><span class="fa fa-fw fa-adjust"></span> WCAG AA Contrast Checker</a></li>
+                                    <li><a href="https://color.adobe.com"><span class="fa fa-fw fa-eyedropper"></span> Adobe Color CC</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -53,9 +68,10 @@
 
                                 <p>Usage rules and recommendations:</p>
 <ul>
-<li>Always use the <a href="#2.2">primary button</a>, unless otherwise stated in the styleguide. See <a href="#2.2">primary button</a> for details.</li>
+<li>All buttons must use have the <code>.btn</code> class declared, regardless of what type of button is it.</li>
+<li>Always use the <a href="#3dot1dot1">primary button</a>, unless otherwise stated in the styleguide.</li>
 <li>Use <code>&lt;button type=&quot;button&quot;&gt;</code> over <code>&lt;a href=&quot;#&quot;&gt;</code> and <code>&lt;input type=&quot;button&quot;&gt;</code>, whenever possible.</li>
-<li>Always declare a <code>type</code> for you <code>button</code>.</li>
+<li>Always declare a <code>type</code> attribute with your <code>button</code>.</li>
 </ul>
 
 
@@ -65,29 +81,52 @@
                     <div id="styleguide-nav" class="styleguide-nav">
                         <ul class="nav nav-pills nav-stacked">
                             <li>
-                                <a href="#3dot1" class="styleguide-nav-2">Primary Button <small>3.1</small> </a>
+                                <a href="#3dot1" class="styleguide-nav-2">Button Types <small>3.1</small></a>
                             </li>
                             <li>
-                                <a href="#3dot2" class="styleguide-nav-2">Default Button <small>3.2</small> </a>
+                                <a href="#3dot1dot1" class="styleguide-nav-3">Primary Button <small>3.1.1</small></a>
                             </li>
                             <li>
-                                <a href="#3dot3" class="styleguide-nav-2">Success Button <small>3.3</small> </a>
+                                <a href="#3dot1dot2" class="styleguide-nav-3">Default Button <small>3.1.2</small></a>
                             </li>
                             <li>
-                                <a href="#3dot4" class="styleguide-nav-2">Info Button <small>3.4</small> </a>
+                                <a href="#3dot1dot3" class="styleguide-nav-3">Success Button <small>3.1.3</small></a>
                             </li>
                             <li>
-                                <a href="#3dot5" class="styleguide-nav-2">Warning Button <small>3.5</small> </a>
+                                <a href="#3dot1dot4" class="styleguide-nav-3">Info Button <small>3.1.4</small></a>
                             </li>
                             <li>
-                                <a href="#3dot6" class="styleguide-nav-2">Danger Button <small>3.6</small> </a>
+                                <a href="#3dot1dot5" class="styleguide-nav-3">Warning Button <small>3.1.5</small></a>
+                            </li>
+                            <li>
+                                <a href="#3dot1dot6" class="styleguide-nav-3">Danger Button <small>3.1.6</small></a>
+                            </li>
+                            <li>
+                                <a href="#3dot2" class="styleguide-nav-2">Button modifiers <small>3.2</small></a>
+                            </li>
+                            <li>
+                                <a href="#3dot2dot1" class="styleguide-nav-3">Sizes <small>3.2.1</small></a>
+                            </li>
+                            <li>
+                                <a href="#3dot2dot2" class="styleguide-nav-3">Block Buttons <small>3.2.2</small></a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-sm-10 col-sm-pull-2 content">
-                                <div class="row" id="3dot1">
-                                    <h2 class="kss-title">Primary Button <small>3.1</small></h2>
+                                <div class="row section" id="3dot1">
+                                    <h2 class="kss-title">Button Types <small>3.1</small></h2>
+
+
+                                    <p>More often than not, you will only use the primary and default buttons. However, there are more options
+available for <code>success</code>, <code>info</code>, <code>warning</code>, and <code>danger</code> prompts or modals.</p>
+
+
+
+                                </div>
+
+                                <div class="row section" id="3dot1dot1">
+                                    <h3 class="kss-title">Primary Button <small>3.1.1</small></h3>
 
 
                                     <p>Always use this button, except in the following contexts:</p>
@@ -115,8 +154,8 @@
 
                                 </div>
 
-                                <div class="row" id="3dot2">
-                                    <h2 class="kss-title">Default Button <small>3.2</small></h2>
+                                <div class="row section" id="3dot1dot2">
+                                    <h3 class="kss-title">Default Button <small>3.1.2</small></h3>
 
 
                                     <p>Usage:</p>
@@ -143,8 +182,8 @@
 
                                 </div>
 
-                                <div class="row" id="3dot3">
-                                    <h2 class="kss-title">Success Button <small>3.3</small></h2>
+                                <div class="row section" id="3dot1dot3">
+                                    <h3 class="kss-title">Success Button <small>3.1.3</small></h3>
 
 
                                     <p>Usage:</p>
@@ -170,8 +209,8 @@
 
                                 </div>
 
-                                <div class="row" id="3dot4">
-                                    <h2 class="kss-title">Info Button <small>3.4</small></h2>
+                                <div class="row section" id="3dot1dot4">
+                                    <h3 class="kss-title">Info Button <small>3.1.4</small></h3>
 
 
                                     <p>Usage:</p>
@@ -197,8 +236,8 @@
 
                                 </div>
 
-                                <div class="row" id="3dot5">
-                                    <h2 class="kss-title">Warning Button <small>3.5</small></h2>
+                                <div class="row section" id="3dot1dot5">
+                                    <h3 class="kss-title">Warning Button <small>3.1.5</small></h3>
 
 
                                     <p>Usage:</p>
@@ -224,8 +263,8 @@
 
                                 </div>
 
-                                <div class="row" id="3dot6">
-                                    <h2 class="kss-title">Danger Button <small>3.6</small></h2>
+                                <div class="row section" id="3dot1dot6">
+                                    <h3 class="kss-title">Danger Button <small>3.1.6</small></h3>
 
 
                                     <p>Usage:</p>
@@ -250,6 +289,104 @@
                                     </div>
 
                                 </div>
+
+                                <div class="row section" id="3dot2">
+                                    <h2 class="kss-title">Button modifiers <small>3.2</small></h2>
+
+
+                                    <p>There are several classes that will modify a buttons appearance. Two of these modifiers (<code>.disabled</code> and <code>.active</code>) are featured with the button types above.</p>
+
+
+
+                                </div>
+
+                                <div class="row section" id="3dot2dot1">
+                                    <h3 class="kss-title">Sizes <small>3.2.1</small></h3>
+
+
+                                    <p>Utilize the <code>.btn-lg</code>, <code>.btn-sm</code>, or <code>.btn-xs</code> classes for different size buttons</p>
+
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <p>
+<button type="button" class="btn btn-primary btn-lg">Large button</button>
+<button type="button" class="btn btn-default btn-lg">Large button</button>
+</p>
+<p>
+<button type="button" class="btn btn-primary">Default button</button>
+<button type="button" class="btn btn-default">Default button</button>
+</p>
+<p>
+<button type="button" class="btn btn-primary btn-sm">Small button</button>
+<button type="button" class="btn btn-default btn-sm">Small button</button>
+</p>
+<p>
+<button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+<button type="button" class="btn btn-default btn-xs">Extra small button</button>
+</p>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <pre>
+                                                <code class="html">&lt;p&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;Large button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot;&gt;Large button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Default button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Small button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-sm&quot;&gt;Small button&lt;/button&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-xs&quot;&gt;Extra small button&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs&quot;&gt;Extra small button&lt;/button&gt;
+&lt;/p&gt;</code>
+                                            </pre>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row section" id="3dot2dot2">
+                                    <h3 class="kss-title">Block Buttons <small>3.2.2</small></h3>
+
+
+                                    <p>Use the <code>.btn-block</code> to stretch the button to the width of its parent element.</p>
+
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div style="width: 300px; background-color: #ccc; margin: 0 auto; padding: 5px;">
+   <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+   <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+</div>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <pre>
+                                                <code class="html">&lt;div style=&quot;width: 300px; background-color: #ccc; margin: 0 auto; padding: 5px;&quot;&gt;
+   &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg btn-block&quot;&gt;Block level button&lt;/button&gt;
+   &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg btn-block&quot;&gt;Block level button&lt;/button&gt;
+&lt;/div&gt;</code>
+                                            </pre>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="center-block">
+                    <iframe src="http://ghbtns.com/github-btn.html?user=ualibweb&repo=ualib-styles&type=fork&size=large"
+                            allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+
+                </div>
+                <div class="row">
 
                 </div>
             </div>

@@ -1,6 +1,9 @@
 body {
   position: relative;
 }
+h2 {
+  border-bottom: 1px solid #ccc;
+}
 pre {
   padding: 0;
   margin-top: 0;
@@ -17,6 +20,9 @@ hr {
 .content-container {
   padding-top: 72px;
 }
+.section {
+  padding-top: 35px;
+}
 /*
 .content > .row{
   h1,h2,h3,h4,h5,h6{
@@ -28,6 +34,12 @@ hr {
     }
   }
 }*/
+.navbar-inverse .navbar-brand {
+  color: #f6f6f6;
+}
+.navbar-right > li > a {
+  font-size: 18px;
+}
 /* styleguide nav */
 .nav-fixed {
   top: 72px;
@@ -35,18 +47,6 @@ hr {
 }
 .styleguide-nav > .nav > li > a {
   font-family: 'Ubuntu', sans-serif;
-}
-.styleguide-nav > .nav > li > .styleguide-nav-3 {
-  padding-left: 30px;
-}
-.styleguide-nav > .nav-pills > li {
-  float: left;
-}
-.styleguide-nav > .nav-pills > li > a {
-  border-radius: 4px;
-}
-.styleguide-nav > .nav-pills > li + li {
-  margin-left: 2px;
 }
 .styleguide-nav > .nav-pills > li.active > a,
 .styleguide-nav > .nav-pills > li.active > a:hover,
@@ -141,3 +141,4 @@ table .swatch-color {
   color: #f6f6f6;
   content: "#61a661";
 }
+/* Footer Styles */

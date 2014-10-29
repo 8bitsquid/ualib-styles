@@ -15,7 +15,7 @@ module.exports = function(grunt){
                     paths: ["src/styles/"]
                 },
                 files: {
-                    "dist/css/ualib-bootstrap.css": "src/styles/bootstrap.less"
+                    "dist/css/ualib-bootstrap.css": "src/styles/*.less"
                 }
             },
             styleguide: {

@@ -6163,3 +6163,7 @@ button.close {
     display: none !important;
   }
 }
+
+.nav li > a > .fa {
+  margin-right: 5px;
+}

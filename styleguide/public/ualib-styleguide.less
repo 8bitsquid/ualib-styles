@@ -2,6 +2,9 @@
 body{
   position: relative;
 }
+h2{
+  border-bottom: 1px solid #ccc;
+}
 pre{
   padding: 0;
   margin-top: 0;
@@ -20,6 +23,10 @@ hr{
   padding-top: 72px;
 }
 
+.section{
+  padding-top: 35px;
+}
+
 /*
 .content > .row{
   h1,h2,h3,h4,h5,h6{
@@ -31,6 +38,14 @@ hr{
     }
   }
 }*/
+
+.navbar-inverse .navbar-brand{
+  color: #f6f6f6;
+}
+
+.navbar-right > li > a{
+  font-size: 18px;
+}
 
 
 /* styleguide nav */
@@ -45,21 +60,11 @@ hr{
 }
 
 .styleguide-nav > .nav > li > .styleguide-nav-3{
-  padding-left: 30px;
+  //padding-left: 30px;
 }
 
 .styleguide-nav > .nav-pills {
   > li {
-    float: left;
-
-    // Links rendered as pills
-    > a {
-      border-radius: @nav-pills-border-radius;
-    }
-    + li {
-      margin-left: 2px;
-    }
-
     // Active state
     &.active > a {
       &,
@@ -71,6 +76,7 @@ hr{
     }
   }
 }
+
 /* Typgraphy */
 .open-sans{
   font-family: 'Open Sans', sans-serif;
@@ -174,4 +180,9 @@ table .swatch-color{
 .table .swatch-color-green:after{
   color: #f6f6f6;
   content: "@{green}";
+}
+
+/* Footer Styles */
+footer .github-btn{
+
 }

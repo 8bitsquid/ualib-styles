@@ -1,9 +1,10 @@
 // Buttons
 //
 // Usage rules and recommendations:
-// * Always use the [primary button](#2.2), unless otherwise stated in the styleguide. See [primary button](#2.2) for details.
+// * All buttons must use have the `.btn` class declared, regardless of what type of button is it.
+// * Always use the [primary button](#3dot1dot1), unless otherwise stated in the styleguide.
 // * Use `<button type="button">` over `<a href="#">` and `<input type="button">`, whenever possible.
-// * Always declare a `type` for you `button`.
+// * Always declare a `type` attribute with your `button`.
 //
 // Styleguide 3.
 .btn {
@@ -54,6 +55,13 @@
 // Alternate buttons
 // --------------------------------------------------
 
+// Button Types
+//
+// More often than not, you will only use the primary and default buttons. However, there are more options
+// available for `success`, `info`, `warning`, and `danger` prompts or modals.
+//
+// Styleguide 3.1
+
 // Default Button
 //
 // Usage:
@@ -66,11 +74,12 @@
 // <button type="button" class="btn btn-default disabled">Default Disabled</button>
 //
 //
-// Styleguide 3.2
+// Styleguide 3.1.2
 
 .btn-default {
   .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
 }
+
 // Primary Button
 //
 // Always use this button, except in the following contexts:
@@ -84,7 +93,7 @@
 // <button type="button" class="btn btn-primary disabled">Primary Disabled</button>
 //
 //
-// Styleguide 3.1
+// Styleguide 3.1.1
 .btn-primary {
   .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
 }
@@ -101,7 +110,7 @@
 // <button type="button" class="btn btn-success disabled">Success Disabled</button>
 //
 //
-// Styleguide 3.3
+// Styleguide 3.1.3
 // Success appears as green
 .btn-success {
   .button-variant(@btn-success-color; @btn-success-bg; @btn-success-border);
@@ -118,7 +127,7 @@
 //
 // .btn-info             - Info button and states.
 //
-// Styleguide 3.4
+// Styleguide 3.1.4
 // Info appears as blue-green
 .btn-info {
   .button-variant(@btn-info-color; @btn-info-bg; @btn-info-border);
@@ -135,7 +144,7 @@
 //
 // .btn-warning             - Warning button and states.
 //
-// Styleguide 3.5
+// Styleguide 3.1.5
 // Warning appears as orange
 .btn-warning {
   .button-variant(@btn-warning-color; @btn-warning-bg; @btn-warning-border);
@@ -152,7 +161,7 @@
 //
 // .btn-danger             - Danger button and states.
 //
-// Styleguide 3.6
+// Styleguide 3.1.6
 // Danger and error appear as red
 .btn-danger {
   .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
@@ -202,6 +211,36 @@
 // Button Sizes
 // --------------------------------------------------
 
+// Button modifiers
+//
+// There are several classes that will modify a buttons appearance. Two of these modifiers (`.disabled` and `.active`) are featured with the button types above.
+//
+// Styleguide 3.2
+
+// Sizes
+//
+// Utilize the `.btn-lg`, `.btn-sm`, or `.btn-xs` classes for different size buttons
+//
+// Markup:
+// <p>
+// <button type="button" class="btn btn-primary btn-lg">Large button</button>
+// <button type="button" class="btn btn-default btn-lg">Large button</button>
+// </p>
+// <p>
+// <button type="button" class="btn btn-primary">Default button</button>
+// <button type="button" class="btn btn-default">Default button</button>
+// </p>
+// <p>
+// <button type="button" class="btn btn-primary btn-sm">Small button</button>
+// <button type="button" class="btn btn-default btn-sm">Small button</button>
+// </p>
+// <p>
+// <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+// <button type="button" class="btn btn-default btn-xs">Extra small button</button>
+// </p>
+//
+// Styleguide 3.2.1
+
 .btn-lg {
   // line-height: ensure even-numbered height of button next to large input
   .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
@@ -217,6 +256,18 @@
 
 // Block button
 // --------------------------------------------------
+
+// Block Buttons
+//
+// Use the `.btn-block` to stretch the button to the width of its parent element.
+//
+// Markup:
+// <div style="width: 300px; background-color: #ccc; margin: 0 auto; padding: 5px;">
+//    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+//    <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+// </div>
+//
+// Styleguide 3.2.2
 
 .btn-block {
   display: block;
