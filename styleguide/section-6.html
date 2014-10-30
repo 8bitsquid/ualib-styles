@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="generator" content="kss-node" />
+        <title>UA Libraries Styleguide</title>
+        <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/github.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500|Oxygen:400,700,300|Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../dist/css/ualib-bootstrap.css">
+        <link rel="stylesheet" href="public/ualib-styleguide.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body data-spy="scroll" data-target="#styleguide-nav" data-offset="90">
+        <header id="header-nav">
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html" >UA Libraries Styleguide</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="section-1.html">Colors</a>
+                            </li>
+                            <li >
+                                <a href="section-2.html">Typography</a>
+                            </li>
+                            <li >
+                                <a href="section-3.html">Buttons</a>
+                            </li>
+                            <li >
+                                <a href="section-4.html">Icons</a>
+                            </li>
+                            <li >
+                                <a href="section-5.html">Links</a>
+                            </li>
+                            <li  class="active" >
+                                <a href="section-6.html">Grid &amp; Gutters</a>
+                            </li>
+
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="https://github.com/ualibweb/ualib-styles" target="_new"><span class="fa fa-github"></span> Github</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="http://getbootstrap.com/"><span class="fa fa-fw fa-border">B</span> Bootstrap Docs</a></li>
+                                    <li><a href="http://fortawesome.github.io/Font-Awesome/"><span class="fa fa-fw fa-flag"></span> Font Awesome</a></li>
+                                    <li><a href="https://www.google.com/fonts"><span class="fa fa-fw fa-paint-brush"></span> Google Fonts</a></li>
+                                    <li><a href="http://webaim.org/resources/contrastchecker/"><span class="fa fa-fw fa-adjust"></span> WCAG AA Contrast Checker</a></li>
+                                    <li><a href="https://color.adobe.com"><span class="fa fa-fw fa-eyedropper"></span> Adobe Color CC</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container content-container">
+            <div class="row">
+                <div class="jumbotron" id="header-jumbo">
+                    <div class="container">
+
+                            <h1>Grid &amp; Gutters <small>6.0</small></h1>
+
+                                <p>The <code>grid</code> and <code>gutters</code> provide a framework to build responsive content layouts while maintaining consistent <a href="http://en.wikipedia.org/wiki/User_experience">UX</a>.</p>
+
+
+                    </div>
+                </div>
+                <div class="col-sm-2 col-sm-push-10">
+                    <div id="styleguide-nav" class="styleguide-nav">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li>
+                                <a href="#6dot1" class="styleguide-nav-2">The Grid <small>6.1</small></a>
+                            </li>
+                            <li>
+                                <a href="#6dot1dot1" class="styleguide-nav-3">Grid Basics <small>6.1.1</small></a>
+                            </li>
+                            <li>
+                                <a href="#6dot2" class="styleguide-nav-2">Gutters <small>6.2</small></a>
+                            </li>
+                            <li>
+                                <a href="#6dot2dot1" class="styleguide-nav-3">Content block gutters <small>6.2.1</small></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-sm-pull-2 content">
+                                <div class="row section" id="6dot1">
+                                    <h2 class="kss-title">The Grid <small>6.1</small></h2>
+
+
+                                    <p>The grid has not been altered from Bootstrap&#39;s grid. Refer to the documentation for <a href="http://getbootstrap.com/css/#grid">Bootstrap&#39;s grid system</a> for more details.</p>
+
+
+
+                                </div>
+
+                                <div class="row section" id="6dot1dot1">
+                                    <h3 class="kss-title">Grid Basics <small>6.1.1</small></h3>
+
+
+                                    <p>Grids are defined by <code>column</code> nested inside a <code>row</code>. <code>Grids</code> <strong>must</strong> wrapped in a container element, using either <code>.container</code> or <code>.container-fluid</code> class (<a href="http://getbootstrap.com/css/#overview-container">Bootstrap containers</a>).
+<strong>NOTE:</strong> The main template will automatically wrap page content in a <code>container</code> element. In the rare event that you need to wrap a <code>grid</code> in a <code>container</code>, keep in mind neither container class is nestable (i.e., only one <code>container</code> per grid, even grids with nested rows).</p>
+
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="CONTAINER_CLASS_HERE">
+   <div class="row">
+     <div class="col-xs-3">
+       <img class="map-holder" data-src="holder.js/100%x150/social/text:.col-xs-3">
+     </div>
+     <div class="col-xs-3">
+       <img class="map-holder" data-src="holder.js/100%x150/social/text:.col-xs-3">
+     </div>
+     <div class="col-xs-3">
+       <img class="map-holder" data-src="holder.js/100%x150/social/text:.col-xs-3">
+     </div>
+     <div class="col-xs-3">
+       <img class="map-holder" data-src="holder.js/100%x150/social/text:.col-xs-3">
+     </div>
+   </div>
+   <div class="row">
+     <div class="col-xs-10">
+       <div class="row">
+         <div class="col-xs-1">
+           <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+         </div>
+         <div class="col-xs-1">
+           <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+         </div>
+         <div class="col-xs-1">
+           <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+         </div>
+         <div class="col-xs-1">
+           <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+         </div>
+         <div class="col-xs-1">
+           <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+         </div>
+         <div class="col-xs-1">
+           <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+         </div>
+         <div class="col-xs-1">
+           <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+         </div>
+         <div class="col-xs-1">
+           <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+         </div>
+         <div class="col-xs-1">
+           <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+         </div>
+         <div class="col-xs-1">
+           <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+         </div>
+         <div class="col-xs-1">
+           <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+         </div>
+         <div class="col-xs-1">
+           <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+         </div>
+       </div>
+     </div>
+     <div class="col-xs-2">
+       <img class="map-holder" data-src="holder.js/100%x150/social/text:.col-xs-2">
+     </div>
+   </div>
+     <div style="padding-top: 15px;"><em>Nested <code>rows</code> don't need their own <code>cotnainer</code> and still have a <code>12 column</code> grid, relative to the width of their parent <code>column</code></em></div>
+ </div>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <pre>
+                                                <code class="html">&lt;div class=&quot;CONTAINER_CLASS_HERE&quot;&gt;
+   &lt;div class=&quot;row&quot;&gt;
+     &lt;div class=&quot;col-xs-3&quot;&gt;
+       &lt;img class=&quot;map-holder&quot; data-src=&quot;holder.js/100%x150/social/text:.col-xs-3&quot;&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;col-xs-3&quot;&gt;
+       &lt;img class=&quot;map-holder&quot; data-src=&quot;holder.js/100%x150/social/text:.col-xs-3&quot;&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;col-xs-3&quot;&gt;
+       &lt;img class=&quot;map-holder&quot; data-src=&quot;holder.js/100%x150/social/text:.col-xs-3&quot;&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;col-xs-3&quot;&gt;
+       &lt;img class=&quot;map-holder&quot; data-src=&quot;holder.js/100%x150/social/text:.col-xs-3&quot;&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+   &lt;div class=&quot;row&quot;&gt;
+     &lt;div class=&quot;col-xs-10&quot;&gt;
+       &lt;div class=&quot;row&quot;&gt;
+         &lt;div class=&quot;col-xs-1&quot;&gt;
+           &lt;img class=&quot;map-holder&quot; data-src=&quot;holder.js/100%x150/sky/text:.col \n -xs \n -1&quot;&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;col-xs-1&quot;&gt;
+           &lt;img class=&quot;map-holder&quot; data-src=&quot;holder.js/100%x150/sky/text:.col \n -xs \n -1&quot;&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;col-xs-1&quot;&gt;
+           &lt;img class=&quot;map-holder&quot; data-src=&quot;holder.js/100%x150/sky/text:.col \n -xs \n -1&quot;&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;col-xs-1&quot;&gt;
+           &lt;img class=&quot;map-holder&quot; data-src=&quot;holder.js/100%x150/sky/text:.col \n -xs \n -1&quot;&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;col-xs-1&quot;&gt;
+           &lt;img class=&quot;map-holder&quot; data-src=&quot;holder.js/100%x150/sky/text:.col \n -xs \n -1&quot;&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;col-xs-1&quot;&gt;
+           &lt;img class=&quot;map-holder&quot; data-src=&quot;holder.js/100%x150/sky/text:.col \n -xs \n -1&quot;&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;col-xs-1&quot;&gt;
+           &lt;img class=&quot;map-holder&quot; data-src=&quot;holder.js/100%x150/sky/text:.col \n -xs \n -1&quot;&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;col-xs-1&quot;&gt;
+           &lt;img class=&quot;map-holder&quot; data-src=&quot;holder.js/100%x150/sky/text:.col \n -xs \n -1&quot;&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;col-xs-1&quot;&gt;
+           &lt;img class=&quot;map-holder&quot; data-src=&quot;holder.js/100%x150/sky/text:.col \n -xs \n -1&quot;&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;col-xs-1&quot;&gt;
+           &lt;img class=&quot;map-holder&quot; data-src=&quot;holder.js/100%x150/sky/text:.col \n -xs \n -1&quot;&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;col-xs-1&quot;&gt;
+           &lt;img class=&quot;map-holder&quot; data-src=&quot;holder.js/100%x150/sky/text:.col \n -xs \n -1&quot;&gt;
+         &lt;/div&gt;
+         &lt;div class=&quot;col-xs-1&quot;&gt;
+           &lt;img class=&quot;map-holder&quot; data-src=&quot;holder.js/100%x150/sky/text:.col \n -xs \n -1&quot;&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;col-xs-2&quot;&gt;
+       &lt;img class=&quot;map-holder&quot; data-src=&quot;holder.js/100%x150/social/text:.col-xs-2&quot;&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+     &lt;div style=&quot;padding-top: 15px;&quot;&gt;&lt;em&gt;Nested &lt;code&gt;rows&lt;/code&gt; don&#x27;t need their own &lt;code&gt;cotnainer&lt;/code&gt; and still have a &lt;code&gt;12 column&lt;/code&gt; grid, relative to the width of their parent &lt;code&gt;column&lt;/code&gt;&lt;/em&gt;&lt;/div&gt;
+ &lt;/div&gt;</code>
+                                            </pre>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row section" id="6dot2">
+                                    <h2 class="kss-title">Gutters <small>6.2</small></h2>
+
+
+                                    <p><code>Gutters</code> define the space between content blocks and other page elements. Always adhere to the gutter definitions in this section.</p>
+
+
+
+                                </div>
+
+                                <div class="row section" id="6dot2dot1">
+                                    <h3 class="kss-title">Content block gutters <small>6.2.1</small></h3>
+
+
+                                    <p>The base gutter is <em>30px</em>. This is based upon the gutter size between columns in the <a href="#6.1">grid</a> system.</p>
+<p>For <code>nested</code> content blocks, you may need <code>smaller gutters</code>:</p>
+<ul>
+<li><code>Nested gutter</code> sizes should be a <code>divisor</code> of <code>30px</code>. The size should scale relative to the size of the parent.<ul>
+<li><code>First level</code> nesting: from <em>10px</em> to <em>15px</em></li>
+<li><code>Second level</code> nesting: <em>5px</em></li>
+</ul>
+</li>
+</ul>
+
+
+
+                                </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="center-block">
+                    <iframe src="http://ghbtns.com/github-btn.html?user=ualibweb&repo=ualib-styles&type=fork&size=large"
+                            allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+
+                </div>
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/holder/2.4.0/holder.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            $(document).ready(function(){
+                var fixed = false;
+                var nav = $('#styleguide-nav');
+                var navWidth = nav.width();
+                var navTop = nav.offset().top;
+
+                //var offsetTop = $('#header-nav').height() + $('header-jumbo').height();
+
+                $(document).scroll(function(){
+                    if ($(document).scrollTop() > (navTop-72)){
+                        if (!fixed){
+                            nav.addClass('nav-fixed');
+                            nav.width(navWidth);
+                            fixed = true;
+                        }
+                    }
+                    else{
+                        if (fixed){
+                            nav.removeClass('nav-fixed');
+                            fixed = false;
+                        }
+                    }
+                })
+            })
+        </script>
+    </body>
+</html>

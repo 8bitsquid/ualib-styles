@@ -1,6 +1,38 @@
 module.exports = function(grunt){
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        banner: '/*!\n' +
+        ' * University of Alabama Libraries Styles v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+        ' * Copyright 2014-<%= grunt.template.today("yyyy") %>\n' +
+        ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n' +
+        ' */\n',
+        concat: {
+          gh_pages_index: {
+              src: 'src/index.html',
+              dest: 'index.html',
+              options: {
+                  process: true
+              }
+          }
+        },
+        cssmin: {
+            minify: {
+                expand: true,
+                cwd: 'dist/css',
+                src: ['*.css', '!*.min.css'],
+                dest: 'dist/css',
+                ext: '.min.css'
+            }
+        },
+        usebanner:{
+            options: {
+                position: 'top',
+                banner: '<%= banner %>'
+            },
+            files: {
+                src: 'dist/css/*.css'
+            }
+        },
         customizeBootstrap: {
             build:{
                 options: {
@@ -10,9 +42,13 @@ module.exports = function(grunt){
             }
         },
         less: {
-            bootstrap: {
+            ualib: {
                 options: {
-                    paths: ["src/styles/"]
+                    paths: ["src/styles/"],
+                    sourceMap: true,
+                    outputSourceFiles: true,
+                    sourceMapURL: '<%= pkg.name %>.css.map',
+                    sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
                 },
                 files: {
                     "dist/css/ualib-bootstrap.css": "src/styles/*.less"
@@ -34,11 +70,14 @@ module.exports = function(grunt){
         }
     });
 
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-customize-bootstrap');
     grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-styleguide');
     grunt.loadNpmTasks('grunt-exec');
+    grunt.loadNpmTasks('grunt-banner');
 
-    grunt.registerTask('default', ['customizeBootstrap', 'less:bootstrap', 'exec', 'less:styleguide']);
-    grunt.registerTask('css', ['customizeBootstrap', 'less:bootstrap']);
+    grunt.registerTask('build-styleguide', ['exec', 'less:styleguide']);
+    grunt.registerTask('dist-css', ['customizeBootstrap', 'less:ualib', 'cssmin', 'usebanner']);
+    grunt.registerTask('default', ['dist-css', 'build-styleguide', 'concat:gh_pages_index']);
 };

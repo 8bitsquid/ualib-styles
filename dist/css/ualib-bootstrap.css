@@ -1,3 +1,9 @@
+/*!
+ * University of Alabama Libraries Styles v0.0.1 (http://ualibweb.github.io/ualib-styles/)
+ * Copyright 2014-2014
+ * Licensed under ECL-2.0 (http://opensource.org/licenses/ECL-2.0)
+ */
+
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -6163,7 +6169,7 @@ button.close {
     display: none !important;
   }
 }
-
+/*# sourceMappingURL=ualib-styles.css.map */
 /* Font Awesome icon codes */
 /*
 a:not([href^=@{github-domain}]):after,
@@ -6223,3 +6229,4 @@ a[href$=".xlsx"]:after {
 .nav li > a > .fa {
   margin-right: 5px;
 }
+/*# sourceMappingURL=ualib-styles.css.map */
