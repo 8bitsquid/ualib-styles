@@ -4,8 +4,8 @@
         <meta name="generator" content="kss-node" />
         <title>UA Libraries Styleguide</title>
         <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/github.min.css">
-        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500|Oxygen:400,700,300|Open+Sans' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="../dist/css/ualib-bootstrap.css">
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500|Oxygen:400,700,300|Open+Sans|EB+Garamond|Lato:300,400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../dist/ualib-bootstrap.css">
         <link rel="stylesheet" href="public/ualib-styleguide.css">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
@@ -78,11 +78,57 @@
 <p>This styleguide is intended for web developers (e.g., not &#39;content creators/editors&#39;). It gives basic information about the primary classes/features available.
 For now, this styleguide is being generating using <a href="https://github.com/kss-node/kss-node">kss-node</a>. Unforunately, kss-node doesn&#39;t offer
 all the features we will need, so it will likely be abandoned for another method when we need to development the styleguide for content creators.</p>
+<h2 id="first-steps">First Steps</h2>
+<p>The UA Libraries website CSS is modified from <a href="http://getbootstrap.com/">Bootstrap 3.2.0</a>. The current build of the CSS supports all Bootstrap features,
+but the features will likely be narrowed down to only what is essential. The list below links to Bootstrap topics/features that the UA Libraries CSS will
+likely be features of the finalized UA Libraries Styles.</p>
+<p>Although all of Bootstrap&#39;s capabilities are currently available (may be subject to change),
+it is strongly recommended you read through the Bootstrap topics linked below before using the UA Libraries version:</p>
+<ul>
+<li>CSS<ul>
+<li><a href="http://getbootstrap.com/css/#overview-container">Containers</a></li>
+<li><a href="http://getbootstrap.com/css/#grid">Grid system</a><ul>
+<li>Read through every sub-topic except &quot;Less mixins and variables&quot;</li>
+</ul>
+</li>
+<li>Tables<ul>
+<li><a href="http://getbootstrap.com/css/#tables-responsive">Responsive Tables</a></li>
+</ul>
+</li>
+<li><a href="http://getbootstrap.com/css/#forms">Forms</a></li>
+<li>Images<ul>
+<li><a href="http://getbootstrap.com/css/#images-responsive">Responsive images</a></li>
+</ul>
+</li>
+<li>Helper classes<ul>
+<li><a href="http://getbootstrap.com/css/#helper-classes-carets">Carets</a></li>
+<li><a href="http://getbootstrap.com/css/#helper-classes-floats">Quick floats</a></li>
+<li><a href="http://getbootstrap.com/css/#helper-classes-screen-readers">Screen reader content</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Components<ul>
+<li><a href="http://getbootstrap.com/components/#dropdowns">Dropdowns</a></li>
+<li><a href="http://getbootstrap.com/components/#btn-groups">Button groups</a></li>
+<li><a href="http://getbootstrap.com/components/#btn-dropdowns">Button dropdowns</a></li>
+<li><a href="http://getbootstrap.com/components/#input-groups">Input groups</a></li>
+<li><a href="http://getbootstrap.com/components/#nav">Navs</a></li>
+<li><a href="http://getbootstrap.com/components/#navbar">Navbar</a></li>
+<li><a href="http://getbootstrap.com/components/#labels">Labels</a></li>
+<li><a href="http://getbootstrap.com/components/#thumbnails">Thumbnails</a></li>
+<li>Alerts<ul>
+<li><a href="http://getbootstrap.com/components/#alerts-dismissible">Dissmissable alerts</a></li>
+<li><a href="http://getbootstrap.com/components/#alerts-links">Links in alerts</a></li>
+</ul>
+</li>
+<li><a href="http://getbootstrap.com/components/#media">Media object</a></li>
+</ul>
+</li>
+</ul>
 <h2 id="using-the-css">Using the CSS</h2>
 <p>For temporary dev purposes you can use <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://raw.githubusercontent.com/ualibweb/ualib-styles/gh-pages/dist/css/ualib-bootstrap.css&quot;&gt;</code>.
 <strong>It is strongly encouraged</strong> that you fork the repo (instructions below) and work off your own build instead (I&#39;m not sure how restrictive github is with direct linking).</p>
-<p>The css uses <a href="http://getbootstrap.com/">Bootstrap</a> as a base. Until this styleguide is complete, use the bootstrap documentation for 
-available CSS and Components not listed in the styleguide. <strong>NOTE:</strong> <a href="http://getbootstrap.com/javascript/">Bootstrap&#39;s Javascript</a> components may not be used directly in the final theme, so don&#39;t worry about getting too familiar with them.</p>
 <h3 id="issues-and-feature-requests">Issues and feature requests</h3>
 <p>Use github&#39;s <a href="https://github.com/ualibweb/ualib-styles/issues">issues system</a> to report problems or make feature requests. To do this, you must first create a github account. Afterwards, let me know you account name and I&#39;ll add you as a contributor.</p>
 <hr>
@@ -132,7 +178,7 @@ available CSS and Components not listed in the styleguide. <strong>NOTE:</strong
                 </div>
             </div>
         </div>
-        <div class="footer">
+        <footer>
             <div class="container">
                 <div class="center-block">
                     <iframe src="http://ghbtns.com/github-btn.html?user=ualibweb&repo=ualib-styles&type=fork&size=large"
@@ -143,7 +189,7 @@ available CSS and Components not listed in the styleguide. <strong>NOTE:</strong
 
                 </div>
             </div>
-        </div>
+        </footer>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>

@@ -18,9 +18,9 @@ module.exports = function(grunt){
         cssmin: {
             minify: {
                 expand: true,
-                cwd: 'dist/css',
+                cwd: 'dist',
                 src: ['*.css', '!*.min.css'],
-                dest: 'dist/css',
+                dest: 'dist',
                 ext: '.min.css'
             }
         },
@@ -30,7 +30,7 @@ module.exports = function(grunt){
                 banner: '<%= banner %>'
             },
             files: {
-                src: 'dist/css/*.css'
+                src: 'dist/*.css'
             }
         },
         customizeBootstrap: {
@@ -48,10 +48,10 @@ module.exports = function(grunt){
                     sourceMap: true,
                     outputSourceFiles: true,
                     sourceMapURL: '<%= pkg.name %>.css.map',
-                    sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
+                    sourceMapFilename: 'dist/<%= pkg.name %>.css.map'
                 },
                 files: {
-                    "dist/css/ualib-bootstrap.css": "src/styles/*.less"
+                    "dist/ualib-bootstrap.css": "src/styles/*.less"
                 }
             },
             styleguide: {

@@ -181,3 +181,6 @@ table .swatch-color {
   content: "#61a661";
 }
 /* Footer Styles */
+footer {
+  min-height: 200px;
+}

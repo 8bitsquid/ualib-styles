@@ -5,12 +5,44 @@ This styleguide is intended for web developers (e.g., not 'content creators/edit
 For now, this styleguide is being generating using [kss-node](https://github.com/kss-node/kss-node). Unforunately, kss-node doesn't offer
 all the features we will need, so it will likely be abandoned for another method when we need to development the styleguide for content creators.
 
+## First Steps
+
+The UA Libraries website CSS is modified from [Bootstrap 3.2.0](http://getbootstrap.com/). The current build of the CSS supports all Bootstrap features,
+but the features will likely be narrowed down to only what is essential. The list below links to Bootstrap topics/features that the UA Libraries CSS will
+likely be features of the finalized UA Libraries Styles.
+
+Although all of Bootstrap's capabilities are currently available (may be subject to change),
+it is strongly recommended you read through the Bootstrap topics linked below before using the UA Libraries version:
+* CSS
+    * [Containers](http://getbootstrap.com/css/#overview-container)
+    * [Grid system](http://getbootstrap.com/css/#grid)
+        * Read through every sub-topic except "Less mixins and variables"
+    * Tables
+        * [Responsive Tables](http://getbootstrap.com/css/#tables-responsive)
+    * [Forms](http://getbootstrap.com/css/#forms)
+    * Images
+        * [Responsive images](http://getbootstrap.com/css/#images-responsive)
+    * Helper classes
+        * [Carets](http://getbootstrap.com/css/#helper-classes-carets)
+        * [Quick floats](http://getbootstrap.com/css/#helper-classes-floats)
+        * [Screen reader content](http://getbootstrap.com/css/#helper-classes-screen-readers)
+* Components
+    * [Dropdowns](http://getbootstrap.com/components/#dropdowns)
+    * [Button groups](http://getbootstrap.com/components/#btn-groups)
+    * [Button dropdowns](http://getbootstrap.com/components/#btn-dropdowns)
+    * [Input groups](http://getbootstrap.com/components/#input-groups)
+    * [Navs](http://getbootstrap.com/components/#nav)
+    * [Navbar](http://getbootstrap.com/components/#navbar)
+    * [Labels](http://getbootstrap.com/components/#labels)
+    * [Thumbnails](http://getbootstrap.com/components/#thumbnails)
+    * Alerts
+        * [Dissmissable alerts](http://getbootstrap.com/components/#alerts-dismissible)
+        * [Links in alerts](http://getbootstrap.com/components/#alerts-links)
+    * [Media object](http://getbootstrap.com/components/#media)
+       
 ## Using the CSS
 For temporary dev purposes you can use `<link rel="stylesheet" href="https://raw.githubusercontent.com/ualibweb/ualib-styles/gh-pages/dist/css/ualib-bootstrap.css">`.
 **It is strongly encouraged** that you fork the repo (instructions below) and work off your own build instead (I'm not sure how restrictive github is with direct linking).
-
-The css uses [Bootstrap](http://getbootstrap.com/) as a base. Until this styleguide is complete, use the bootstrap documentation for 
-available CSS and Components not listed in the styleguide. **NOTE:** [Bootstrap's Javascript](http://getbootstrap.com/javascript/) components may not be used directly in the final theme, so don't worry about getting too familiar with them.
 
 ### Issues and feature requests
 Use github's [issues system](https://github.com/ualibweb/ualib-styles/issues) to report problems or make feature requests. To do this, you must first create a github account. Afterwards, let me know you account name and I'll add you as a contributor.
