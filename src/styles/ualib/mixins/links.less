@@ -1,0 +1,32 @@
+// Links
+//
+// `PDF`, `Microsoft Word`, `Excel`, `Powerpoint`, and `external` links have context icons appended automatically.
+//
+// Markup:
+// <ul>
+//    <li><a href="pdf-file-path.pdf">PDF file link</a></li>
+//    <li><a href="word-file-path.pdf">Excel file link</a></li>
+//    <li><a href="excel-file-path.pdf">PDF file link</a></li>
+//    <li><a href="http://codepen.io/ashleynolan/pen/rpjHg">Link to external website</a></li>
+//    <li><a href="https://secure-site-url">Works with HTTPS too!</a></li>
+// </ul>
+//
+// Styleguide 5
+
+/* Font Awesome icon codes */
+@icon-ext-link: "\f08e";
+@icon-pdf: "\f1c1";
+@icon-word: "\f1c2";
+@icon-excel: "\f1c3";
+@icon-powerpoint: "\f1c4";
+
+.link-icon-after(@icon){
+  content: @icon;
+  font-family: FontAwesome;
+  font-size: .75em;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 3px;
+}

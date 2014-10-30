@@ -1,4 +1,4 @@
-@import 'ualib/variables.less';
+@import 'ualib/mixins/links.less';
 /*
 a:not([href^=@{github-domain}]):after,
 a:not([href^=@{ualib-domain}]):after {
@@ -15,15 +15,21 @@ a:not([href^=@{ualib-domain}]):after {
 
 a[href^="http"]:after,
 a[href^="https"]:after{
-  content: @icon-ext-link;
-  font-family: FontAwesome;
-  font-size: .75em;
-  font-weight: normal;
-  font-style: normal;
-  display: inline-block;
-  text-decoration: none;
-  padding-left: 3px;
+  .link-icon-after(@icon-ext-link);
 }
+
+a[href$=".pdf"]:after{
+  .link-icon-after(@icon-pdf);
+}
+a[href$=".doc"]:after,
+a[href$=".docx"]:after{
+  .link-icon-after(@icon-word);
+}
+a[href$=".xlsx"]:after{
+  .link-icon-after(@icon-excel);
+}
+
+
 
 .nav{
   li > a > .fa {

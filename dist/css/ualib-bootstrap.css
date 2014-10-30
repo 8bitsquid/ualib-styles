@@ -6188,6 +6188,37 @@ a[href^="https"]:after {
   text-decoration: none;
   padding-left: 3px;
 }
+a[href$=".pdf"]:after {
+  content: "\f1c1";
+  font-family: FontAwesome;
+  font-size: .75em;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 3px;
+}
+a[href$=".doc"]:after,
+a[href$=".docx"]:after {
+  content: "\f1c2";
+  font-family: FontAwesome;
+  font-size: .75em;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 3px;
+}
+a[href$=".xlsx"]:after {
+  content: "\f1c3";
+  font-family: FontAwesome;
+  font-size: .75em;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 3px;
+}
 .nav li > a > .fa {
   margin-right: 5px;
 }
