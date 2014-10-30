@@ -26,6 +26,23 @@
 @icon-excel: "\f1c3";
 @icon-powerpoint: "\f1c4";
 
+a[href^="http"]:after,
+a[href^="https"]:after{
+  .link-icon-after(@icon-ext-link);
+}
+
+a[href$=".pdf"]:after{
+  .link-icon-after(@icon-pdf);
+}
+a[href$=".doc"]:after,
+a[href$=".docx"]:after{
+  .link-icon-after(@icon-word);
+}
+a[href$=".xls"]:after,
+a[href$=".xlsx"]:after{
+  .link-icon-after(@icon-excel);
+}
+
 .link-icon-after(@icon){
   content: @icon;
   font-family: FontAwesome;
@@ -34,5 +51,5 @@
   font-style: normal;
   display: inline-block;
   text-decoration: none;
-  padding-left: 3px;
+  padding-left: 5px;
 }

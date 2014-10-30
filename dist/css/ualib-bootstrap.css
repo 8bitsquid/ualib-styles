@@ -6192,7 +6192,7 @@ a[href^="https"]:after {
   font-style: normal;
   display: inline-block;
   text-decoration: none;
-  padding-left: 3px;
+  padding-left: 5px;
 }
 a[href$=".pdf"]:after {
   content: "\f1c1";
@@ -6202,7 +6202,7 @@ a[href$=".pdf"]:after {
   font-style: normal;
   display: inline-block;
   text-decoration: none;
-  padding-left: 3px;
+  padding-left: 5px;
 }
 a[href$=".doc"]:after,
 a[href$=".docx"]:after {
@@ -6213,7 +6213,7 @@ a[href$=".docx"]:after {
   font-style: normal;
   display: inline-block;
   text-decoration: none;
-  padding-left: 3px;
+  padding-left: 5px;
 }
 a[href$=".xls"]:after,
 a[href$=".xlsx"]:after {
@@ -6224,7 +6224,7 @@ a[href$=".xlsx"]:after {
   font-style: normal;
   display: inline-block;
   text-decoration: none;
-  padding-left: 3px;
+  padding-left: 5px;
 }
 .nav li > a > .fa {
   margin-right: 5px;

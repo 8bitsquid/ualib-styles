@@ -54,6 +54,45 @@ hr {
   color: #ffffff;
   background-color: #428bca;
 }
+/* Grid & Gutters */
+.CONTAINER_CLASS_HERE > .row {
+  margin: 0 5px;
+  padding: 10px 5px;
+  border: 1px solid #ccc;
+}
+.CONTAINER_CLASS_HERE > .row:first-child {
+  border-bottom: none;
+}
+.CONTAINER_CLASS_HERE > .row:first-child:before {
+  content: "Row 1";
+  font-size: 17px;
+  color: #999;
+  padding-bottom: 10px;
+}
+.CONTAINER_CLASS_HERE > .row + .row:before {
+  content: "Row 2";
+  font-size: 17px;
+  color: #999;
+  padding-bottom: 10px;
+}
+.CONTAINER_CLASS_HERE > .row > div > .row {
+  border: 1px solid #999;
+}
+.CONTAINER_CLASS_HERE > .row > div > .row:before {
+  content: "Nested Row 1";
+  font-size: 17px;
+  color: #999;
+  padding-bottom: 10px;
+  position: absolute;
+  top: 5px;
+  left: 1px;
+  padding: 3px;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #666;
+  z-index: 800;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.35);
+}
 /* Typgraphy */
 .open-sans {
   font-family: 'Open Sans', sans-serif;
