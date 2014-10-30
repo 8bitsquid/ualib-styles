@@ -6164,6 +6164,33 @@ button.close {
   }
 }
 
+/* Font Awesome */
+/*
+a:not([href^=@{github-domain}]):after,
+a:not([href^=@{ualib-domain}]):after {
+  content: "\f08e";
+  font-family: FontAwesome;
+  font-size: .75em;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 3px;
+}*/
+a:not([href^="#"]):after,
+a:not([href^="http://www.lib.ua.edu"]):after,
+a:not([href^="https://www.lib.ua.edu"]):after,
+a:not([href^="http://ualibweb.github.io"]):after,
+a:not([href^="https://ualibweb.github.io"]):after {
+  content: "\f08e";
+  font-family: FontAwesome;
+  font-size: .75em;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 3px;
+}
 .nav li > a > .fa {
   margin-right: 5px;
 }
