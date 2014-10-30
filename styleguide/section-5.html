@@ -40,6 +40,9 @@
                             <li  class="active" >
                                 <a href="section-5.html">Links</a>
                             </li>
+                            <li >
+                                <a href="section-6.html">Grid &amp; Gutters</a>
+                            </li>
 
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
@@ -77,10 +80,47 @@
                 <div class="col-sm-2 col-sm-push-10">
                     <div id="styleguide-nav" class="styleguide-nav">
                         <ul class="nav nav-pills nav-stacked">
+                            <li>
+                                <a href="#5dot1" class="styleguide-nav-2">Link examples <small>5.1</small></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-sm-10 col-sm-pull-2 content">
+                                <div class="row section" id="5dot1">
+                                    <h2 class="kss-title">Link examples <small>5.1</small></h2>
+
+
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <ul>
+   <li><a href="pdf-file-path.pdf">PDF file link</a></li>
+   <li><a href="word-file-path.xlsx">Excel file link</a></li>
+   <li><a href="word-file-path.xls">Works for old Excel(*.xsl) extensions</a></li>
+   <li><a href="excel-file-path.docx">Word file link</a></li>
+   <li><a href="excel-file-path.doc">Works for old Word(*.doc) extensions</a></li>
+   <li><a href="http://codepen.io/ashleynolan/pen/rpjHg">Link to external website</a></li>
+   <li><a href="https://secure-site-url">Works with HTTPS too!</a></li>
+</ul>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <pre>
+                                                <code class="html">&lt;ul&gt;
+   &lt;li&gt;&lt;a href=&quot;pdf-file-path.pdf&quot;&gt;PDF file link&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;word-file-path.xlsx&quot;&gt;Excel file link&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;word-file-path.xls&quot;&gt;Works for old Excel(*.xsl) extensions&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;excel-file-path.docx&quot;&gt;Word file link&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;excel-file-path.doc&quot;&gt;Works for old Word(*.doc) extensions&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;http://codepen.io/ashleynolan/pen/rpjHg&quot;&gt;Link to external website&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;https://secure-site-url&quot;&gt;Works with HTTPS too!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code>
+                                            </pre>
+                                        </div>
+                                    </div>
+
+                                </div>
+
                 </div>
             </div>
         </div>
@@ -99,6 +139,7 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/holder/2.4.0/holder.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
         <script>
             $(document).ready(function(){

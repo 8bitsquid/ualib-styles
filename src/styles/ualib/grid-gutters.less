@@ -1,0 +1,99 @@
+// Grid & Gutters
+//
+// The `grid` and `gutters` provide a framework to build responsive content layouts while maintaining consistent [UX](http://en.wikipedia.org/wiki/User_experience).
+//
+// Styleguide 6.
+
+// The Grid
+//
+// The grid has not been altered from Bootstrap's grid. Refer to the documentation for [Bootstrap's grid system](http://getbootstrap.com/css/#grid) for more details.
+//
+// Styleguide 6.1
+
+// Grid Basics
+//
+// Grids are defined by `column` nested inside a `row`. `Grids` **must** wrapped in a container element, using either `.container` or `.container-fluid` class ([Bootstrap containers](http://getbootstrap.com/css/#overview-container)).
+// **NOTE:** The main template will automatically wrap page content in a `container` element. In the rare event that you need to wrap a `grid` in a `container`, keep in mind neither container class is nestable (i.e., only one `container` per grid, even grids with nested rows).
+//
+// Markup:
+// <div class="CONTAINER_CLASS_HERE">
+//    <div class="row">
+//      <div class="col-xs-3">
+//        <img class="map-holder" data-src="holder.js/100%x150/social/text:.col-xs-3">
+//      </div>
+//      <div class="col-xs-3">
+//        <img class="map-holder" data-src="holder.js/100%x150/social/text:.col-xs-3">
+//      </div>
+//      <div class="col-xs-3">
+//        <img class="map-holder" data-src="holder.js/100%x150/social/text:.col-xs-3">
+//      </div>
+//      <div class="col-xs-3">
+//        <img class="map-holder" data-src="holder.js/100%x150/social/text:.col-xs-3">
+//      </div>
+//    </div>
+//    <div class="row">
+//      <div class="col-xs-10">
+//        <div class="row">
+//          <div class="col-xs-1">
+//            <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+//          </div>
+//          <div class="col-xs-1">
+//            <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+//          </div>
+//          <div class="col-xs-1">
+//            <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+//          </div>
+//          <div class="col-xs-1">
+//            <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+//          </div>
+//          <div class="col-xs-1">
+//            <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+//          </div>
+//          <div class="col-xs-1">
+//            <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+//          </div>
+//          <div class="col-xs-1">
+//            <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+//          </div>
+//          <div class="col-xs-1">
+//            <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+//          </div>
+//          <div class="col-xs-1">
+//            <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+//          </div>
+//          <div class="col-xs-1">
+//            <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+//          </div>
+//          <div class="col-xs-1">
+//            <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+//          </div>
+//          <div class="col-xs-1">
+//            <img class="map-holder" data-src="holder.js/100%x150/sky/text:.col \n -xs \n -1">
+//          </div>
+//        </div>
+//      </div>
+//      <div class="col-xs-2">
+//        <img class="map-holder" data-src="holder.js/100%x150/social/text:.col-xs-2">
+//      </div>
+//    </div>
+//      <div style="padding-top: 15px;"><em>Nested <code>rows</code> don't need their own <code>cotnainer</code> and still have a <code>12 column</code> grid, relative to the width of their parent <code>column</code></em></div>
+//  </div>
+//
+// Styleguide 6.1.1
+
+// Gutters
+//
+// `Gutters` define the space between content blocks and other page elements. Always adhere to the gutter definitions in this section.
+//
+// Styleguide 6.2
+
+// Content block gutters
+//
+// The base gutter is _30px_. This is based upon the gutter size between columns in the [grid](#6.1) system.
+//
+// For `nested` content blocks, you may need `smaller gutters`:
+// * `Nested gutter` sizes should be a `divisor` of `30px`. The size should scale relative to the size of the parent.
+//    *  `First level` nesting: from _10px_ to _15px_
+//    *  `Second level` nesting: _5px_
+//
+// Styleguide 6.2.1

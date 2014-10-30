@@ -6209,6 +6209,7 @@ a[href$=".docx"]:after {
   text-decoration: none;
   padding-left: 3px;
 }
+a[href$=".xls"]:after,
 a[href$=".xlsx"]:after {
   content: "\f1c3";
   font-family: FontAwesome;
