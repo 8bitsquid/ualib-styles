@@ -13,11 +13,8 @@ a:not([href^=@{ualib-domain}]):after {
 }*/
 
 
-a:not([href^="#"]):after,
-a:not([href^="http://www.lib.ua.edu"]):after,
-a:not([href^="https://www.lib.ua.edu"]):after,
-a:not([href^="http://ualibweb.github.io"]):after,
-a:not([href^="https://ualibweb.github.io"]):after{
+a[href^="http"]:after,
+a[href^="https"]:after{
   content: @icon-ext-link;
   font-family: FontAwesome;
   font-size: .75em;
