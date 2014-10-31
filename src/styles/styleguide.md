@@ -11,8 +11,8 @@ The UA Libraries website CSS is modified from [Bootstrap 3.2.0](http://getbootst
 but the features will likely be narrowed down to only what is essential. The list below links to Bootstrap topics/features that the UA Libraries CSS will
 likely be features of the finalized UA Libraries Styles.
 
-Although all of Bootstrap's capabilities are currently available (may be subject to change),
-it is strongly recommended you read through the Bootstrap topics linked below before using the UA Libraries version:
+Although all of Bootstrap's capabilities are currently available (subject to change),
+it is strongly recommended you read through the the linked _recommended Bootstrap capabilities_ linked below:
 * CSS
     * [Containers](http://getbootstrap.com/css/#overview-container)
     * [Grid system](http://getbootstrap.com/css/#grid)
