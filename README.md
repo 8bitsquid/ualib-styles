@@ -3,7 +3,7 @@ UA Libraries Style and Styleguide
 
 ## Styles
 
-The CSS is generated from [Bootstrap's](http://getbootstrap.com/) source. Customized Bootstrap features have their [Less](http://lesscss.org/) file copied to the
+The CSS is generated from [Bootstrap's](http://getbootstrap.com/) source. Customized Bootstrap features have their [Less](http://lesscss.org/) files copied to the
 `src/styles/bootstrap` folder. After changes to the `.less` files are made, a [Grunt](http://gruntjs.com/) task is run to build the new `.css` file (builds to `dist/css/` folder).
 
 Non-Bootstrap styles are in the `src/styles/ualib.less` file. This file is build to CSS and concatenated with the Bootstrap `.less` files.
