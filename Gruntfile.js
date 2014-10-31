@@ -1,6 +1,10 @@
 module.exports = function(grunt){
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        dir: {
+            src: 'src',
+            dist: 'dist'
+        },
         banner: '/*!\n' +
         ' * University of Alabama Libraries Styles v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
         ' * Copyright 2014-<%= grunt.template.today("yyyy") %>\n' +
