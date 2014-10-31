@@ -41,8 +41,13 @@ it is strongly recommended you read through the the linked _recommended Bootstra
     * [Media object](http://getbootstrap.com/components/#media)
        
 ## Using the CSS
-For temporary dev purposes you can use `<link rel="stylesheet" href="https://raw.githubusercontent.com/ualibweb/ualib-styles/gh-pages/dist/css/ualib-bootstrap.css">`.
-**It is strongly encouraged** that you fork the repo (instructions below) and work off your own build instead (I'm not sure how restrictive github is with direct linking).
+For development use the [RawGit](https://rawgit.com/) service for the header include. You can change the link to your own fork as well.
+
+**Note:** Only use this link for low-traffic dev or demo sites.
+```
+<link rel="stylesheet" href="https://rawgit.com/ualibweb/ualib-styles/gh-pages/dist/ualib-styles.min.css">
+```
+
 
 ### Issues and feature requests
 Use github's [issues system](https://github.com/ualibweb/ualib-styles/issues) to report problems or make feature requests. To do this, you must first create a github account. Afterwards, let me know you account name and I'll add you as a contributor.
