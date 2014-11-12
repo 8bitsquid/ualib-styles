@@ -197,3 +197,45 @@
     }
   }
 }
+
+// Embedded Navbar
+//
+// Navbar designed to be embedded with components used as part of a web page's content.
+// See the [calendar component](section-8.html#8dot1) for an example.
+//
+// Markup:
+//<nav class="navbar navbar-default navbar-embedded">
+//<button type="button" class="btn btn-default navbar-btn navbar-left" disabled="disabled"><span class="fa fa-angle-left"></span></button>
+//<p class="navbar-text navbar-center">Some Centered Text</p>
+//<button type="button" class="btn btn-default navbar-btn navbar-right"><span class="fa fa-angle-right"></span></button>
+//</nav>
+//
+// Styleguide 7.2
+
+.navbar-embedded{
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1.5em;
+  min-height: 1em;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: none;
+
+  > .navbar-center{
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+
+  > .navbar-btn {
+    font-size: 0.85em;
+    margin: 5px;
+    &:focus,
+    &:hover {
+      background-color: lighten(@body-bg, 6.5%);
+    }
+  }
+
+}

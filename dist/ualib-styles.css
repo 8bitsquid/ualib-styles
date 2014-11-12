@@ -6271,6 +6271,86 @@ fieldset[disabled] .navbar-crimson .btn-link:hover,
 fieldset[disabled] .navbar-crimson .btn-link:focus {
   color: #cccccc;
 }
+.navbar-embedded {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1.5em;
+  min-height: 1em;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: none;
+}
+.navbar-embedded > .navbar-center {
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+.navbar-embedded > .navbar-btn {
+  font-size: 0.85em;
+  margin: 5px;
+}
+.navbar-embedded > .navbar-btn:focus,
+.navbar-embedded > .navbar-btn:hover {
+  background-color: #fdfdfd;
+}
+.calendar > table {
+  height: 100%;
+  font-size: 13px;
+}
+.calendar > table > thead > tr > td {
+  color: #31708f;
+  text-align: center;
+  background-color: #d9edf7;
+  border: 1px solid #b9b9b9 !important;
+  border-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.calendar > table > tbody > tr > td {
+  width: 14.28571429%;
+  margin: 0;
+  background-color: #f9f9f9;
+  border-color: #cdcdcd;
+}
+.calendar > table > tbody > tr > td > .date {
+  font-size: .85em;
+  display: block;
+  float: right;
+  margin: 0;
+}
+.calendar > table > tbody > tr > td > .hours {
+  padding: 1.5em 0 1em 0.85em;
+  text-align: left;
+}
+.calendar > table > tbody > tr > .today {
+  color: #31708f;
+  background-color: #d9edf7;
+}
+.calendar > table > tbody > tr > .exception {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+}
+.calendar > table > tbody > tr > .closed {
+  color: #a94442;
+  background-color: #f2dede;
+}
+.calendar > table > tbody > tr > .prev-month,
+.calendar > table > tbody > tr > .next-month {
+  color: #8e8e8e;
+  background-color: #e7e7e7;
+}
+.calendar > table > tbody > tr > .prev-month.exception,
+.calendar > table > tbody > tr > .next-month.exception {
+  color: #b8aa91;
+  background-color: #f1efe5;
+}
+.calendar > table > tbody > tr > .prev-month.closed,
+.calendar > table > tbody > tr > .next-month.closed {
+  color: #c89594;
+  background-color: #ece2e2;
+}
 /* Font Awesome icon codes */
 a[href^="http"]:after,
 a[href^="https"]:after {

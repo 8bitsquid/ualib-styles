@@ -1,0 +1,284 @@
+// Components
+//
+// Styleguide 8.
+
+// Calendar
+//
+// The calendar is still very much in progress. Due to the nature of the content and how much space is needed to be readable,
+// there are still many caveats on where it can be used in context to Bootstrap column sizes. For now, is needs to be placed in a column no smaller than 9 (e.g., col-xs-9)
+//
+// Use the [embedded navbar](section-7.html#7dot2) for calendar navigation.
+//
+// Markup:
+//<div class="calendar table-responsive">
+//<div class="lead text-muted">This calendar is assuming the current day is Nov 11th</div>
+//<nav class="navbar navbar-default navbar-embedded">
+//<button type="button" class="btn btn-default navbar-btn navbar-left" disabled="disabled"><span class="fa fa-angle-left"></span></button>
+//<p class="navbar-text navbar-center">November</p>
+//<button type="button" class="btn btn-default navbar-btn navbar-right"><span class="fa fa-angle-right"></span></button>
+//</nav>
+//<table class="table table-bordered table-condensed">
+//<thead>
+//<tr>
+//<td>Sun</td>
+//<td>Mon</td>
+//<td>Tue</td>
+//<td>Wed</td>
+//<td>Thur</td>
+//<td>Fri</td>
+//<td>Sat</td>
+//</tr>
+//</thead>
+//<tbody>
+//<tr>
+//<td class="prev-month">
+//<div class="date">26</div>
+//<div class="hours">7:30am<br>2am</div>
+//</td>
+//<td class="prev-month">
+//<div class="date">27</div>
+//<div class="hours">7:30am<br>2am</div>
+//</td>
+//<td class="prev-month">
+//<div class="date">28</div>
+//<div class="hours">7:30am<br>2am</div>
+//</td>
+//<td class="prev-month exception">
+//<div class="date">29</div>
+//<div class="hours">9am<br>Midnight</div>
+//</td>
+//<td class="prev-month exception">
+//<div class="date">30</div>
+//<div class="hours">9am<br>Midnight</div>
+//</td>
+//<td class="prev-month exception">
+//<div class="date">31</div>
+//<div class="hours">9am<br>Midnight</div>
+//</td>
+//<td>
+//<div class="date">1</div>
+//<div class="hours">7:30am<br>2am</div>
+//</td>
+//</tr>
+//<tr>
+//<td>
+//<div class="date">2</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td>
+//<div class="date">3</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td>
+//<div class="date">4</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td>
+//<div class="date">5</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td>
+//<div class="date">6</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td>
+//<div class="date">7</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td>
+//<div class="date">8</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//</tr><tr>
+//<td>
+//<div class="date">9</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td>
+//<div class="date">10</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td class="today">
+//<div class="date">11</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td>
+//<div class="date">12</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td>
+//<div class="date">13</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td>
+//<div class="date">14</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td class="exception">
+//<div class="date">15</div>
+//<div class="hours">9am<br> 1pm</div>
+//</td>
+//</tr>
+//<tr>
+//<td>
+//<div class="date">16</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td>
+//<div class="date">17</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td>
+//<div class="date">18</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td>
+//<div class="date">19</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td>
+//<div class="date">20</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td>
+//<div class="date">21</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td class="exception">
+//<div class="date">22</div>
+//<div class="hours">10am<br> 9pm</div>
+//</td>
+//</tr>
+//<tr>
+//<td>
+//<div class="date">23</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td>
+//<div class="date">24</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td>
+//<div class="date">25</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td class="exception">
+//<div class="date">26</div>
+//<div class="hours">7:30am<br> 2am</div>
+//</td>
+//<td class="closed">
+//<div class="date">27</div>
+//<div class="hours">Closed</div>
+//</td>
+//<td class="closed">
+//<div class="date">28</div>
+//<div class="hours">Closed</div>
+//</td>
+//<td class="closed">
+//<div class="date">29</div>
+//<div class="hours">Closed</div>
+//</td>
+//</tr>
+//<tr>
+//<td class="exception">
+//<div class="date">30</div>
+//<div class="hours">12pm<br> Midnight</div>
+//</td>
+//<td class="next-month">
+//<div class="date">1</div>
+//<div class="hours">Open 24hrs</div>
+//</td>
+//<td class="next-month">
+//<div class="date">2</div>
+//<div class="hours">Open 24hrs</div>
+//</td>
+//<td class="next-month">
+//<div class="date">3</div>
+//<div class="hours">Open 24hrs</div>
+//</td>
+//<td class="next-month">
+//<div class="date">4</div>
+//<div class="hours">Open 24hrs</div>
+//</td>
+//<td class="next-month closed">
+//<div class="date">5</div>
+//<div class="hours">Closed</div>
+//</td>
+//<td class="next-month closed">
+//<div class="date">6</div>
+//<div class="hours">Closed</div>
+//</td>
+//</tr>
+//</tbody>
+//</table>
+//</div>
+//
+// Styleguide 8.1
+
+.calendar{
+  > table{
+    height: 100%;
+    font-size: 13px;
+
+    > thead > tr > td{
+      color: @state-info-text;
+      text-align: center;
+      background-color: @state-info-bg;
+      border: 1px solid darken(@body-bg, 20%) !important;
+      border-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    > tbody > tr {
+
+      > td {
+        width: 0%+(100/7);
+        margin: 0;
+        background-color: @gray-lighter;
+        border-color: darken(@body-bg, 12%);
+
+        > .date {
+          font-size: .85em;
+          display: block;
+          float: right;
+          margin: 0;
+        }
+
+        > .hours {
+          padding: 1.5em 0 1em 0.85em;
+          text-align: left;
+        }
+      }
+
+      > .today {
+        color: @state-info-text;
+        background-color: @state-info-bg;
+      }
+      > .exception {
+        color: @state-warning-text;
+        background-color: @state-warning-bg;
+      }
+
+      > .closed{
+        color: @state-danger-text;
+        background-color: @state-danger-bg;
+      }
+
+      > .prev-month, > .next-month{
+        @day-muted-bg: darken(@body-bg, 2%);
+        @day-muted-text: darken(@day-muted-bg, 35%);
+        color: @day-muted-text;
+        background-color: @day-muted-bg;
+        &.exception{
+          color: average(@day-muted-bg, @state-warning-text);
+          background-color: average(@day-muted-bg, @state-warning-bg);
+        }
+        &.closed{
+          color: average(@day-muted-bg, @state-danger-text);
+          background-color: average(@day-muted-bg, @state-danger-bg);
+        }
+      }
+    }
+  }
+}

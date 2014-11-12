@@ -46,6 +46,9 @@
                             <li >
                                 <a href="section-7.html">Navs</a>
                             </li>
+                            <li >
+                                <a href="section-8.html">Components</a>
+                            </li>
 
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
@@ -76,13 +79,15 @@
                             <h1>Typography <small>2.0</small></h1>
 
                                 <p>The <a href="https://www.google.com/fonts">Google Fonts</a> service provides all fonts available.
-you can include these fonts using this <code>header</code> include</p>
+For development purposes, use the CDN link as an include:</p>
 <pre><code>&lt;link href=&#39;http://fonts.googleapis.com/css?family=Ubuntu:300,400,500|Oxygen:400,700,300|Open+Sans|EB+Garamond|Lato:300,400&#39; rel=&#39;stylesheet&#39; type=&#39;text/css&#39;&gt;
 </code></pre><div class="bg-warning text-warning">
-Google Fonts may not be used in production. The main concern is about performance. Since our website will not a be a <a href="http://en.wikipedia.org/wiki/Single-page_application">single page application</a>
+<s>Google Fonts may not be used in production. The main concern is about performance. Since our website will not a be a <a href="http://en.wikipedia.org/wiki/Single-page_application">single page application</a>
 it may be better to download fonts from Adobe&#39;s <a href="https://typekit.com/fonts?licenses=desktop">Typekit</a> service and load them from our servers so thay can be cached.
 Although the privacy concerns don&#39;t directly effect this decision, the article <a href="http://fontfeed.com/archives/google-webfonts-the-spy-inside/">Google Webfonts, The Spy Inside?</a> lays out some
-convincing points about performance issues using font/media CDNs.
+convincing points about performance issues using font/media CDNs.</s>
+
+<br><br>This is no longer an issue. The fonts will be downloaded and built into the styles to facilitate caching.
 </div>
 
                     </div>

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="generator" content="kss-node" />
+        <title>UA Libraries Styleguide</title>
+        <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/github.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500|Oxygen:400,700,300|Open+Sans|EB+Garamond|Lato:300,400' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../dist/ualib-styles.min.css">
+        <link rel="stylesheet" href="public/ualib-styleguide.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body data-spy="scroll" data-target="#styleguide-nav" data-offset="90">
+        <header id="header-nav">
+            <nav class="navbar navbar-crimson navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html" >UA Libraries Styleguide</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="section-1.html">Colors</a>
+                            </li>
+                            <li >
+                                <a href="section-2.html">Typography</a>
+                            </li>
+                            <li >
+                                <a href="section-3.html">Buttons</a>
+                            </li>
+                            <li >
+                                <a href="section-4.html">Icons</a>
+                            </li>
+                            <li >
+                                <a href="section-5.html">Links</a>
+                            </li>
+                            <li >
+                                <a href="section-6.html">Grid &amp; Gutters</a>
+                            </li>
+                            <li >
+                                <a href="section-7.html">Navs</a>
+                            </li>
+                            <li  class="active" >
+                                <a href="section-8.html">Components</a>
+                            </li>
+
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="https://github.com/ualibweb/ualib-styles" target="_new"><span class="fa fa-github"></span> Github</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="http://getbootstrap.com/"><span class="fa fa-fw fa-border">B</span> Bootstrap Docs</a></li>
+                                    <li><a href="http://fortawesome.github.io/Font-Awesome/"><span class="fa fa-fw fa-flag"></span> Font Awesome</a></li>
+                                    <li><a href="https://www.google.com/fonts"><span class="fa fa-fw fa-paint-brush"></span> Google Fonts</a></li>
+                                    <li><a href="http://webaim.org/resources/contrastchecker/"><span class="fa fa-fw fa-adjust"></span> WCAG AA Contrast Checker</a></li>
+                                    <li><a href="https://color.adobe.com"><span class="fa fa-fw fa-eyedropper"></span> Adobe Color CC</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container content-container">
+            <div class="row">
+                <div class="jumbotron" id="header-jumbo">
+                    <div class="container">
+
+                            <h1>Components <small>8.0</small></h1>
+
+
+                    </div>
+                </div>
+                <div class="col-sm-2 col-sm-push-10">
+                    <div id="styleguide-nav" class="styleguide-nav">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li>
+                                <a href="#8dot1" class="styleguide-nav-2">Calendar <small>8.1</small></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-sm-pull-2 content">
+                                <div class="row section" id="8dot1">
+                                    <h2 class="kss-title">Calendar <small>8.1</small></h2>
+
+
+                                    <p>The calendar is still very much in progress. Due to the nature of the content and how much space is needed to be readable,
+there are still many caveats on where it can be used in context to Bootstrap column sizes. For now, is needs to be placed in a column no smaller than 9 (e.g., col-xs-9)</p>
+<p>Use the <a href="section-7.html#7dot2">embedded navbar</a> for calendar navigation.</p>
+
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="calendar table-responsive">
+<div class="lead text-muted">This calendar is assuming the current day is Nov 11th</div>
+<nav class="navbar navbar-default navbar-embedded">
+<button type="button" class="btn btn-default navbar-btn navbar-left" disabled="disabled"><span class="fa fa-angle-left"></span></button>
+<p class="navbar-text navbar-center">November</p>
+<button type="button" class="btn btn-default navbar-btn navbar-right"><span class="fa fa-angle-right"></span></button>
+</nav>
+<table class="table table-bordered table-condensed">
+<thead>
+<tr>
+<td>Sun</td>
+<td>Mon</td>
+<td>Tue</td>
+<td>Wed</td>
+<td>Thur</td>
+<td>Fri</td>
+<td>Sat</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="prev-month">
+<div class="date">26</div>
+<div class="hours">7:30am<br>2am</div>
+</td>
+<td class="prev-month">
+<div class="date">27</div>
+<div class="hours">7:30am<br>2am</div>
+</td>
+<td class="prev-month">
+<div class="date">28</div>
+<div class="hours">7:30am<br>2am</div>
+</td>
+<td class="prev-month exception">
+<div class="date">29</div>
+<div class="hours">9am<br>Midnight</div>
+</td>
+<td class="prev-month exception">
+<div class="date">30</div>
+<div class="hours">9am<br>Midnight</div>
+</td>
+<td class="prev-month exception">
+<div class="date">31</div>
+<div class="hours">9am<br>Midnight</div>
+</td>
+<td>
+<div class="date">1</div>
+<div class="hours">7:30am<br>2am</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="date">2</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td>
+<div class="date">3</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td>
+<div class="date">4</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td>
+<div class="date">5</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td>
+<div class="date">6</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td>
+<div class="date">7</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td>
+<div class="date">8</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+</tr><tr>
+<td>
+<div class="date">9</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td>
+<div class="date">10</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td class="today">
+<div class="date">11</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td>
+<div class="date">12</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td>
+<div class="date">13</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td>
+<div class="date">14</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td class="exception">
+<div class="date">15</div>
+<div class="hours">9am<br> 1pm</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="date">16</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td>
+<div class="date">17</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td>
+<div class="date">18</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td>
+<div class="date">19</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td>
+<div class="date">20</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td>
+<div class="date">21</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td class="exception">
+<div class="date">22</div>
+<div class="hours">10am<br> 9pm</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="date">23</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td>
+<div class="date">24</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td>
+<div class="date">25</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td class="exception">
+<div class="date">26</div>
+<div class="hours">7:30am<br> 2am</div>
+</td>
+<td class="closed">
+<div class="date">27</div>
+<div class="hours">Closed</div>
+</td>
+<td class="closed">
+<div class="date">28</div>
+<div class="hours">Closed</div>
+</td>
+<td class="closed">
+<div class="date">29</div>
+<div class="hours">Closed</div>
+</td>
+</tr>
+<tr>
+<td class="exception">
+<div class="date">30</div>
+<div class="hours">12pm<br> Midnight</div>
+</td>
+<td class="next-month">
+<div class="date">1</div>
+<div class="hours">Open 24hrs</div>
+</td>
+<td class="next-month">
+<div class="date">2</div>
+<div class="hours">Open 24hrs</div>
+</td>
+<td class="next-month">
+<div class="date">3</div>
+<div class="hours">Open 24hrs</div>
+</td>
+<td class="next-month">
+<div class="date">4</div>
+<div class="hours">Open 24hrs</div>
+</td>
+<td class="next-month closed">
+<div class="date">5</div>
+<div class="hours">Closed</div>
+</td>
+<td class="next-month closed">
+<div class="date">6</div>
+<div class="hours">Closed</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <pre>
+                                                <code class="html">&lt;div class=&quot;calendar table-responsive&quot;&gt;
+&lt;div class=&quot;lead text-muted&quot;&gt;This calendar is assuming the current day is Nov 11th&lt;/div&gt;
+&lt;nav class=&quot;navbar navbar-default navbar-embedded&quot;&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default navbar-btn navbar-left&quot; disabled=&quot;disabled&quot;&gt;&lt;span class=&quot;fa fa-angle-left&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+&lt;p class=&quot;navbar-text navbar-center&quot;&gt;November&lt;/p&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default navbar-btn navbar-right&quot;&gt;&lt;span class=&quot;fa fa-angle-right&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+&lt;/nav&gt;
+&lt;table class=&quot;table table-bordered table-condensed&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;td&gt;Sun&lt;/td&gt;
+&lt;td&gt;Mon&lt;/td&gt;
+&lt;td&gt;Tue&lt;/td&gt;
+&lt;td&gt;Wed&lt;/td&gt;
+&lt;td&gt;Thur&lt;/td&gt;
+&lt;td&gt;Fri&lt;/td&gt;
+&lt;td&gt;Sat&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;prev-month&quot;&gt;
+&lt;div class=&quot;date&quot;&gt;26&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt;2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;prev-month&quot;&gt;
+&lt;div class=&quot;date&quot;&gt;27&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt;2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;prev-month&quot;&gt;
+&lt;div class=&quot;date&quot;&gt;28&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt;2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;prev-month exception&quot;&gt;
+&lt;div class=&quot;date&quot;&gt;29&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;9am&lt;br&gt;Midnight&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;prev-month exception&quot;&gt;
+&lt;div class=&quot;date&quot;&gt;30&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;9am&lt;br&gt;Midnight&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;prev-month exception&quot;&gt;
+&lt;div class=&quot;date&quot;&gt;31&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;9am&lt;br&gt;Midnight&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;1&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt;2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;2&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;3&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;4&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;5&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;6&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;7&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;8&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;9&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;10&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;today&quot;&gt;
+&lt;div class=&quot;date&quot;&gt;11&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;12&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;13&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;14&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;exception&quot;&gt;
+&lt;div class=&quot;date&quot;&gt;15&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;9am&lt;br&gt; 1pm&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;16&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;17&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;18&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;19&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;20&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;21&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;exception&quot;&gt;
+&lt;div class=&quot;date&quot;&gt;22&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;10am&lt;br&gt; 9pm&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;23&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;24&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;div class=&quot;date&quot;&gt;25&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;exception&quot;&gt;
+&lt;div class=&quot;date&quot;&gt;26&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;7:30am&lt;br&gt; 2am&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;closed&quot;&gt;
+&lt;div class=&quot;date&quot;&gt;27&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;Closed&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;closed&quot;&gt;
+&lt;div class=&quot;date&quot;&gt;28&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;Closed&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;closed&quot;&gt;
+&lt;div class=&quot;date&quot;&gt;29&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;Closed&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;exception&quot;&gt;
+&lt;div class=&quot;date&quot;&gt;30&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;12pm&lt;br&gt; Midnight&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;next-month&quot;&gt;
+&lt;div class=&quot;date&quot;&gt;1&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;Open 24hrs&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;next-month&quot;&gt;
+&lt;div class=&quot;date&quot;&gt;2&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;Open 24hrs&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;next-month&quot;&gt;
+&lt;div class=&quot;date&quot;&gt;3&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;Open 24hrs&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;next-month&quot;&gt;
+&lt;div class=&quot;date&quot;&gt;4&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;Open 24hrs&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;next-month closed&quot;&gt;
+&lt;div class=&quot;date&quot;&gt;5&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;Closed&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;next-month closed&quot;&gt;
+&lt;div class=&quot;date&quot;&gt;6&lt;/div&gt;
+&lt;div class=&quot;hours&quot;&gt;Closed&lt;/div&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</code>
+                                            </pre>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+
+        </footer>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/holder/2.4.0/holder.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            $(document).ready(function(){
+                var fixed = false;
+                var nav = $('#styleguide-nav');
+                var navWidth = nav.width();
+                var navTop = nav.offset().top;
+
+                //var offsetTop = $('#header-nav').height() + $('header-jumbo').height();
+
+                $(document).scroll(function(){
+                    if ($(document).scrollTop() > (navTop-72)){
+                        if (!fixed){
+                            nav.addClass('nav-fixed');
+                            nav.width(navWidth);
+                            fixed = true;
+                        }
+                    }
+                    else{
+                        if (fixed){
+                            nav.removeClass('nav-fixed');
+                            fixed = false;
+                        }
+                    }
+                })
+            })
+        </script>
+    </body>
+</html>
